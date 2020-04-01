@@ -14,7 +14,7 @@ application = flask.Flask(__name__)
 
 @application.route('/')
 def hello_world():
-    message = "Hello, world!"
+    message = "Hello,world!"
     return message
  
 if __name__ == '__main__':
