@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+message SummaryUiPb {
+    int32 totalHits = 1;
+}

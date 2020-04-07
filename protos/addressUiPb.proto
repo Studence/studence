@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message AddressUiPb {
+    string street = 1;
+    string landmark = 2;
+    string area = 3;
+    string city =4;
+    string state =5;
+}

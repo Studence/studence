@@ -2,9 +2,8 @@ from enum import Enum
 
 
 class EnvironmentTypeEnum(Enum):
-    UNKNOWN_ENV = 0
-    DEVEL = 1,
-    PROD = 5,
+    DEVEL = 0,
+    PROD = 1,
 
     @staticmethod
     def getEnum(name):

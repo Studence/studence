@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "timeUiPb.proto";
+import "entityUiPb.proto";
+
+message EntityPb {
+    string id = 1;
+    StatusEnum lifeTime = 2;
+    LocalePb locale = 3;
+}
+
+message LocalePb{
+    TimeZoneEnum defaultTimeZone = 1;
+}

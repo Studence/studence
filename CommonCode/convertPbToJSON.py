@@ -9,6 +9,7 @@ class ConvertPbToJSON:
     def converPbtojson(self, builder):
         return MessageToJson(builder)
 
+    #use this
     def converPbtojsonString(self, builder):
         pbjson = MessageToJson(builder)
         stringjson = str(json.dumps(pbjson))

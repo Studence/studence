@@ -34,6 +34,14 @@ class Strings:
         return str1 == str2
 
     @staticmethod
+    def concatinateWithUnderScore(str1, str2):
+        return str1 + "_" + str2
+
+    @staticmethod
+    def copy(message1, message2):
+        return message1.CopyFrom(message2)
+
+    @staticmethod
     def getTittleCaseStringMaker(data):
         Char1 = '^'
         Char2 = '^^'

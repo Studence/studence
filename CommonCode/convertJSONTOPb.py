@@ -2,15 +2,13 @@ import json
 
 from google.protobuf import json_format
 
-from CommonCode.jsonToPb import json2pb
-from Protobuff.worker_pb2 import WorkerPb
-
 
 class ConvertJSONToPb:
 
     def converjsontoPB(self, response, instanceType):
         return json_format.Parse(response, instanceType, ignore_unknown_fields=False)
 
+    #use this
     def converjsontoPBProper(self, response, instanceType):
         #return json2pb(pb=WorkerPb,js=json.dumps(response))
         return json_format.Parse(text=json.dumps(response), message=instanceType, ignore_unknown_fields=False)

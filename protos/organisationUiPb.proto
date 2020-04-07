@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import "nameUiPb.proto";
+import "entityUiPb.proto";
+import "timeUiPb.proto";
+import "summaryUiPb.proto";
+
+message OrganisationUiPb {
+    EntityUiPb dbInfo = 1;
+    NameUiPb name = 2;
+    TimeUiPb time = 3;
+}
+
+message OrganisationSearchRequestUiPb {
+
+}
+
+
+message OrganisationSearchResponseUiPb {
+    SummaryUiPb summary = 1;
+    repeated OrganisationUiPb results = 2;
+}
