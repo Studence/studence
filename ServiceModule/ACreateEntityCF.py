@@ -15,7 +15,8 @@ class State(Enum):
     SEARCH_IN_DB = 2
     CONVERT_TO_PB = 3;
     CREATE_IN_DB = 4
-    DONE = 5;
+    CONVERT_TO_UIPB = 5
+    DONE = 6;
 
 
 class ACreateEntityCF:
@@ -25,13 +26,15 @@ class ACreateEntityCF:
     m_json = None;
     m_updator = None
     m_instance = None
+    m_convertor = None
     m_table = None
 
     m_entityService = EntityService()
 
-    def __init__(self, updator, uipb, table):
+    def __init__(self, updator, convertor, pb, table):
         self.m_updator = updator;
-        self.m_instance = uipb;
+        self.m_instance = pb;
+        self.m_convertor = convertor
         self.m_table = table;
 
     def start(self, uipb):
@@ -40,7 +43,7 @@ class ACreateEntityCF:
 
     def done(self):
         if (self.m_response != None):
-            return self.m_uiPb
+            return self.m_response
 
     def checkUiPbIsEmpty(self):
         if (self.m_uiPb == None):
@@ -67,14 +70,23 @@ class ACreateEntityCF:
             raise Exception('Error while Converting to Pb' + MessageToJson(self.m_uiPb))
 
     def createInDb(self):
-        create = CreateQuery(self.m_table)
+        create = CreateQuery(self.m_instance, self.m_table)
         resp = create.create(pb=self.m_json)
         if (resp == None):
             # self.controlFlow(currentState=State.DONE)
             raise Exception('Error Occur while Inserting to Db' + MessageToJson(self.m_uiPb))
         else:
             self.m_response = resp
+            self.controlFlow(currentState=State.CONVERT_TO_UIPB)
+
+    def convertToUiPb(self):
+        resp = self.m_convertor.convert(self.m_response)
+        if (resp != None):
+            self.m_response = resp
             self.controlFlow(currentState=State.DONE)
+        else:
+            # self.controlFlow(currentState=State.DONE)
+            raise Exception('Error while Converting to UiPb' + MessageToJson(self.m_response))
 
     def controlFlow(self, currentState):
         if (currentState == State.CHECK_UIPB_IS_EMPTY):
@@ -85,5 +97,7 @@ class ACreateEntityCF:
             self.convertToPb()
         elif (currentState == State.CREATE_IN_DB):
             self.createInDb()
+        elif (currentState == State.CONVERT_TO_UIPB):
+            self.convertToUiPb()
         elif (currentState == State.DONE):
             self.done()

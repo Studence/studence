@@ -1,7 +1,7 @@
 from Protobuff.timeUiPb_pb2 import TimeUiPb
 
 
-class TimeUpdator:
+class TimeUiPbUpdator:
 
     def update(self, pb, uipb):
         pb.date = uipb.date

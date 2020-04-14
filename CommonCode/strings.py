@@ -26,6 +26,10 @@ class Strings:
         return builder.localPart + '@' + builder.domain
 
     @staticmethod
+    def getConcatinateStringWithAtTheRate(str1, str2):
+        return str1 + '@' + str2
+
+    @staticmethod
     def getFormattedName(builder):
         return builder.firstName.title() + ' ' + builder.lastName.title()
 
@@ -34,8 +38,16 @@ class Strings:
         return str1 == str2
 
     @staticmethod
+    def toLower(str1):
+        return str(str1).lower()
+
+    @staticmethod
     def concatinateWithUnderScore(str1, str2):
         return str1 + "_" + str2
+
+    @staticmethod
+    def concatinate(str1, str2):
+        return str1 + str2
 
     @staticmethod
     def copy(message1, message2):

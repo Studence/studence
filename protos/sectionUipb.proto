@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+enum SectionTypeEnum {
+    UNKNOWN_SECTION = 0;
+    SECTION_A = 1;
+    SECTION_B = 2;
+    SECTION_C = 3;
+    SECTION_D = 4;
+    SECTION_E = 5;
+}

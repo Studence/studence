@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "entityPb.proto";
+import "namePb.proto";
+import "timePb.proto";
+import "classTypeUiPb.proto";
+import "schoolPb.proto";
+import "sectionUiPb.proto";
+
+message ClassPb {
+    EntityPb dbInfo = 1;
+    NamePb name = 2;
+    ClassTypeEnum classType = 3;
+    SectionTypeEnum sectionType = 4;
+    SchoolPbRef schoolRef = 5;
+    string classCode = 6;
+    TimePb createdTime = 7;
+}
+
+message ClassPbRef {
+    string id = 1;
+    SchoolPbRef schoolRef = 2;
+    string classCode = 3;
+    ClassTypeEnum classType = 4;
+    SectionTypeEnum sectionType = 5;
+}

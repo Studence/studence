@@ -2,7 +2,7 @@ syntax = "proto3";
 
 import "mobileUiPb.proto";
 
-message MobileUiPb {
+message MobilePb {
     PhoneCodeEnum code = 1;
     string number = 2;
 }

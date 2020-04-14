@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "entityPb.proto";
+import "namePb.proto";
+import "emailPb.proto";
+import "addressPb.proto";
+import "timePb.proto";
+import "mobilePb.proto";
+import "classPb.proto";
+
+message StudentPb {
+    EntityPb dbInfo = 1;
+    NamePb name = 2;
+    EmailPb email = 3;
+    AddressPb address = 4;
+    repeated MobilePb mobile = 5;
+    TimePb createdTime = 6;
+    ClassPbRef classRef = 7;
+    string studentCode = 8;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+message AccountDetailsUiPb {
+    string accountNo = 1;
+    string ifscCode = 2;
+    string recipientName = 3;
+    string bankName = 4;
+    string branch = 5;
+    GooglePayUiPb googlePay = 6;
+}
+
+
+message GooglePayUiPb {
+    string upiId = 1;
+}
+enum AccountUseTypeEnum {
+    UNKNOWN_ACCOUNT_TYPE = 0;
+    SINGLE_USE = 1;
+    MULTI_USE = 2;
+}

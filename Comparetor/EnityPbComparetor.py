@@ -11,7 +11,7 @@ class EntityPbComparetor:
         if (Strings.notEmpty(oldPb.id)):
             if (Strings.notEmpty(newPb.id)):
                 if (Strings.areEquals(str1=oldPb.id, str2=newPb.id)):
-                    pass
+                    oldPb.id = newPb.id
                 else:
                     raise Exception('DbInfo id deffers in pbs' + MessageToJson(newPb) + " " + MessageToJson(oldPb))
             else:
@@ -21,7 +21,7 @@ class EntityPbComparetor:
 
         if (oldPb.lifeTime != UNKNOWN_STATUS):
             if (newPb.lifeTime != UNKNOWN_STATUS):
-                pass
+                oldPb.lifeTime = newPb.lifeTime
             else:
                 raise Exception('Status Cannot be UNKOWN_STATUS' + MessageToJson(newPb))
         else:
@@ -29,7 +29,7 @@ class EntityPbComparetor:
 
         if (oldPb.locale.defaultTimeZone != UNKNOWN_TIME_ZONE):
             if (newPb.locale.defaultTimeZone != UNKNOWN_TIME_ZONE):
-                return True
+                oldPb.locale.defaultTimeZone = newPb.locale.defaultTimeZone
             else:
                 raise Exception('TimeZone Cannot be UNKOWN_TIME_ZONE' + MessageToJson(newPb))
         else:

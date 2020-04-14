@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "entityUiPb.proto";
+import "nameUiPb.proto";
+import "timeUiPb.proto";
+import "classUiPb.proto";
+
+
+enum AttendanceTypeEnum {
+    ATTENDEE_ABSENT = 0;
+    ATTENDEE_PRESENT = 1;
+}
+
+message AttendanceUiPb {
+    EntityUiPb dbInfo = 1;
+    string attendeeId = 2;
+    NameUiPb attendeeName = 3;
+    TimeUiPb createdTime = 4;
+    AttendanceTypeEnum attendanceStatus = 5;
+    ClassUiPbRef classRef = 6;
+}

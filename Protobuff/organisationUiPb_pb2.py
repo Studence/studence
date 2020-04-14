@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x16organisationUiPb.proto\x1a\x0enameUiPb.proto\x1a\x10\x65ntityUiPb.proto\x1a\x0etimeUiPb.proto\x1a\x11summaryUiPb.proto\"a\n\x10OrganisationUiPb\x12\x1b\n\x06\x64\x62Info\x18\x01 \x01(\x0b\x32\x0b.EntityUiPb\x12\x17\n\x04name\x18\x02 \x01(\x0b\x32\t.NameUiPb\x12\x17\n\x04time\x18\x03 \x01(\x0b\x32\t.TimeUiPb\"\x1f\n\x1dOrganisationSearchRequestUiPb\"c\n\x1eOrganisationSearchResponseUiPb\x12\x1d\n\x07summary\x18\x01 \x01(\x0b\x32\x0c.SummaryUiPb\x12\"\n\x07results\x18\x02 \x03(\x0b\x32\x11.OrganisationUiPbb\x06proto3'
+  serialized_pb=b'\n\x16organisationUiPb.proto\x1a\x0enameUiPb.proto\x1a\x10\x65ntityUiPb.proto\x1a\x0etimeUiPb.proto\x1a\x11summaryUiPb.proto\"r\n\x10OrganisationUiPb\x12\x1b\n\x06\x64\x62Info\x18\x01 \x01(\x0b\x32\x0b.EntityUiPb\x12\x17\n\x04name\x18\x02 \x01(\x0b\x32\t.NameUiPb\x12\x17\n\x04time\x18\x03 \x01(\x0b\x32\t.TimeUiPb\x12\x0f\n\x07orgCode\x18\x04 \x01(\t\"\x1f\n\x1dOrganisationSearchRequestUiPb\"c\n\x1eOrganisationSearchResponseUiPb\x12\x1d\n\x07summary\x18\x01 \x01(\x0b\x32\x0c.SummaryUiPb\x12\"\n\x07results\x18\x02 \x03(\x0b\x32\x11.OrganisationUiPbb\x06proto3'
   ,
   dependencies=[nameUiPb__pb2.DESCRIPTOR,entityUiPb__pb2.DESCRIPTOR,timeUiPb__pb2.DESCRIPTOR,summaryUiPb__pb2.DESCRIPTOR,])
 
@@ -57,6 +57,13 @@ _ORGANISATIONUIPB = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='orgCode', full_name='OrganisationUiPb.orgCode', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -70,7 +77,7 @@ _ORGANISATIONUIPB = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=95,
-  serialized_end=192,
+  serialized_end=209,
 )
 
 
@@ -93,8 +100,8 @@ _ORGANISATIONSEARCHREQUESTUIPB = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=194,
-  serialized_end=225,
+  serialized_start=211,
+  serialized_end=242,
 )
 
 
@@ -131,8 +138,8 @@ _ORGANISATIONSEARCHRESPONSEUIPB = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=227,
-  serialized_end=326,
+  serialized_start=244,
+  serialized_end=343,
 )
 
 _ORGANISATIONUIPB.fields_by_name['dbInfo'].message_type = entityUiPb__pb2._ENTITYUIPB

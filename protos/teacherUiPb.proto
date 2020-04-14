@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+import "entityUiPb.proto";
+import "nameUiPb.proto";
+import "mobileUiPb.proto";
+import "emailUiPb.proto";
+import "schoolUiPb.proto";
+import "timeUiPb.proto";
+
+message TeacherUiPb {
+    EntityUiPb dbInfo = 1;
+    NameUiPb name = 2;
+    MobileUiPb mobile = 3;
+    EmailUiPb email = 4;
+    SchoolUiPbRef schoolRef = 5;
+    string teacherCode = 6;
+    TimeUiPb createdTime =7;
+}
+
+message TeacherUiPbRef {
+    string id = 1;
+    NameUiPb name = 2;
+    string teacherCode = 3;
+}

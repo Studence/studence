@@ -16,4 +16,7 @@ class UpdateQuery:
     def update(self, id, pb):
         updateQuerycf = UpdateQueryCF(self.m_comparetor, self.m_convertor, self.m_instance, self.m_table);
         updateQuerycf.start(id=id, pb=pb)
-        return updateQuerycf.done();
+        if (updateQuerycf.done() == None):
+            raise Exception('Entity not Updated')
+        else:
+            return updateQuerycf.done();

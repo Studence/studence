@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+import "entityUiPb.proto";
+import "nameUiPb.proto";
+import "addressUiPb.proto";
+import "timeUiPb.proto";
+import "mobileUiPb.proto";
+import "classTypeUiPb.proto";
+import "sectionUiPb.proto";
+import "genericRefUiPb.proto";
+import "accountDetailsUiPb.proto";
+import "summaryUiPb.proto";
+
+message SchoolUiPb {
+    EntityUiPb dbInfo = 1;
+    NameUiPb name = 2;
+    AddressUiPb address = 3;
+    repeated MobileUiPb mobile = 4;
+    TimeUiPb createdTime = 5;
+    GenericRefUiPb organisation = 6;
+    string schoolCode = 7;
+    AccountUseTypeEnum accountUseType = 8;
+    AccountDetailsUiPb accountDetails = 9;
+    repeated ClassTypeEnum classType = 10;
+    repeated SectionTypeEnum sectionType = 11;
+}
+
+message SchoolUiPbRef {
+    string id = 1;
+    GenericRefUiPb organisation = 2;
+    string schoolCode = 3;
+    repeated ClassTypeEnum classType = 4;
+    repeated SectionTypeEnum sectionType = 5;
+
+}
+
+message SchoolSearchRequestUiPb {
+
+}
+
+message SchoolSearchResponseUiPb {
+    SummaryUiPb summary = 1;
+    repeated SchoolUiPb results = 2;
+}
+

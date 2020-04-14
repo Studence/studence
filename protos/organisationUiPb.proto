@@ -9,6 +9,7 @@ message OrganisationUiPb {
     EntityUiPb dbInfo = 1;
     NameUiPb name = 2;
     TimeUiPb time = 3;
+    string orgCode = 4;
 }
 
 message OrganisationSearchRequestUiPb {

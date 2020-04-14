@@ -12,7 +12,7 @@ from ServiceModule.AUpdateEntity import AUpdateEntity
 
 
 class OrganisationService:
-    m_aCreateEnity = ACreateEntity(OrganisationUpdator(), OrganisationUiPb(), OrganisationTableName())
+    m_aCreateEnity = ACreateEntity(OrganisationUpdator(),OrganisationConvertor(), OrganisationPb(), OrganisationTableName())
     m_aGetEntity = AGetEntity(OrganisationConvertor(), OrganisationPb(), OrganisationTableName())
     m_aUpdateEntity = AUpdateEntity(OrganisationUpdator(), OrganisationConvertor(), OrganisationComparetor(),
                                     OrganisationPb(), OrganisationTableName())

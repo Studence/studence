@@ -18,4 +18,6 @@ class OrganisationConvertor:
             self.m_namePbConvertor.convert(pb=organisationPb.name, uipb=organisationUiPb.name)
         if (organisationPb.time.milliseconds > 0):
             self.m_timePbConvertor.convert(pb=organisationPb.time, uipb=organisationUiPb.time)
-        return organisationPb
+        if (Strings.notEmpty(organisationUiPb.orgCode)):
+            organisationUiPb.orgCode = organisationPb.orgCode
+        return organisationUiPb

@@ -1,12 +1,41 @@
 cd protos
 echo [COMPILEING  UIPROTOS AND PROTOS]
 protoc summaryUiPb.proto --python_out=..\Protobuff
+protoc sectionUiPb.proto --python_out=..\Protobuff
+protoc userTypeUiPb.proto --python_out=..\Protobuff
+protoc classTypeUiPb.proto --python_out=..\Protobuff
+protoc emailUiPb.proto --python_out=..\Protobuff
+protoc emailPb.proto --python_out=..\Protobuff
+protoc genericRefUiPb.proto --python_out=..\Protobuff
+protoc genericRefPb.proto --python_out=..\Protobuff
+protoc mobileUiPb.proto --python_out=..\Protobuff
+protoc mobilePb.proto --python_out=..\Protobuff
 protoc nameUiPb.proto --python_out=..\Protobuff
 protoc namePb.proto --python_out=..\Protobuff
+protoc addressUiPb.proto --python_out=..\Protobuff
+protoc addressPb.proto --python_out=..\Protobuff
+protoc accountDetailsUiPb.proto --python_out=..\Protobuff
+protoc accountDetailsPb.proto --python_out=..\Protobuff
 protoc timeUiPb.proto --python_out=..\Protobuff
 protoc timePb.proto --python_out=..\Protobuff
 protoc entityUiPb.proto --python_out=..\Protobuff
 protoc entityPb.proto --python_out=..\Protobuff
 protoc organisationUiPb.proto --python_out=..\Protobuff
 protoc organisationPb.proto --python_out=..\Protobuff
+protoc schoolUiPb.proto --python_out=..\Protobuff
+protoc schoolPb.proto --python_out=..\Protobuff
+protoc classUiPb.proto --python_out=..\Protobuff
+protoc classPb.proto --python_out=..\Protobuff
+protoc parentsUiPb.proto --python_out=..\Protobuff
+protoc parentsPb.proto --python_out=..\Protobuff
+protoc studentUiPb.proto --python_out=..\Protobuff
+protoc studentPb.proto --python_out=..\Protobuff
+protoc teacherUiPb.proto --python_out=..\Protobuff
+protoc teacherPb.proto --python_out=..\Protobuff
+protoc attendanceUiPb.proto --python_out=..\Protobuff
+protoc attendancePb.proto --python_out=..\Protobuff
+protoc loginUiPb.proto --python_out=..\Protobuff
+protoc loginPb.proto --python_out=..\Protobuff
+protoc memberUiPb.proto --python_out=..\Protobuff
+protoc memberPb.proto --python_out=..\Protobuff
 cd ..

@@ -29,6 +29,7 @@ class UpdateQueryCF():
     m_instance = None
     m_convertor = None
     m_comparetor = None
+    m_check = False
 
     def __init__(self, comparetor, convertor, instance, table):
         self.m_convertor = convertor
@@ -47,7 +48,7 @@ class UpdateQueryCF():
         self.controlFlow(currentState=State.CHECK_ID_IS_EMPTY)
 
     def done(self):
-        return self.m_pb
+        return self.m_pbFromDb
 
     def checkIdIsEmpty(self):
         if (self.m_id == None):
@@ -79,11 +80,16 @@ class UpdateQueryCF():
         if (self.m_pbFromDb == None):
             raise Exception('Error while Converting to Pb' + self.m_response)
         else:
-            self.controlFlow(currentState=State.COMPARE_BOTH_PBS)
+            if (self.m_check):
+                self.controlFlow(currentState=State.DONE)
+            else:
+                self.m_check = True
+                self.controlFlow(currentState=State.COMPARE_BOTH_PBS)
 
     def comapreBothPbs(self):
         resp = self.m_comparetor.compare(newPb=self.m_pb, oldPb=self.m_pbFromDb)
-        if (resp == True):
+        if (resp != None):
+            self.m_pb = resp
             self.controlFlow(currentState=State.CONVERT_TO_JSON)
         else:
             raise Exception('UPDATE FAILED due to improper UiPb' + MessageToJson(self.m_pb))
@@ -100,7 +106,7 @@ class UpdateQueryCF():
         if (resp == None):
             raise Exception('Update to database Failed' + MessageToJson(self.m_pb))
         else:
-            self.controlFlow(currentState=State.DONE)
+            self.controlFlow(currentState=State.GET_FROM_DB)
 
     def controlFlow(self, currentState):
         if (currentState == State.CHECK_ID_IS_EMPTY):

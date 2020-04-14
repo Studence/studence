@@ -10,8 +10,8 @@ class OrganisationSearcher:
         self.m_keys.clear()
         self.m_values.clear()
         self.addRequiredExpression()
-        # if (organisationSearchRequestUiPb == None):
-        # assert True, "Search request is Empty"
+        if (organisationSearchRequestUiPb == None):
+            assert True, "Search request is Empty"
 
         return self.m_keys, self.m_values
 

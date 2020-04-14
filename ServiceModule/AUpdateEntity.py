@@ -1,3 +1,6 @@
+from ServiceModule.AUpdateEntityCF import AUpdateEntityCF
+
+
 class AUpdateEntity:
     m_updator = None
     m_convertor = None
@@ -13,7 +16,7 @@ class AUpdateEntity:
         self.m_table = table
 
     def update(self, id, uipb):
-        m_aUpdateEntity = AUpdateEntity(self.m_updator, self.m_convertor, self.m_comparetor,
+        m_aUpdateEntity = AUpdateEntityCF(self.m_updator, self.m_convertor, self.m_comparetor,
                                         self.m_instance, self.m_table)
         m_aUpdateEntity.start(id=id, pb=uipb)
         return m_aUpdateEntity.done()

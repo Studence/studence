@@ -8,9 +8,10 @@ from CommonQueryExecutor.UpdateQueryExecutor.UpdateQuery import UpdateQuery
 class State(Enum):
     CHECK_ID_IS_NOT_EMPTY = 0;
     CHECK_PB_IS_NOT_EMPTY = 1;
-    CONVERT_TO_UIPB = 2
+    CONVERT_TO_PB = 2
     UPDATE = 3
-    DONE = 4;
+    CONVERT_TO_UIPB = 4
+    DONE = 5;
 
 
 class AUpdateEntityCF:
@@ -37,7 +38,7 @@ class AUpdateEntityCF:
 
     def done(self):
         if (self.m_response != None):
-            return self.m_pb
+            return self.m_response
 
     def checkIdIsEmpty(self):
         if (self.m_getId == None or self.m_pb.dbInfo.id == None):
@@ -51,12 +52,12 @@ class AUpdateEntityCF:
             assert True, "Pb Cannot be Empty"
             self.controlFlow(currentState=State.DONE)
         else:
-            self.controlFlow(currentState=State.CONVERT_TO_UIPB)
+            self.controlFlow(currentState=State.CONVERT_TO_PB)
 
-    def convertToUiPb(self):
-        resp = self.m_convertor.convert(self.m_pb)
+    def convertToPb(self):
+        resp = self.m_updator.update(self.m_pb)
         if (resp == None):
-            raise Exception('Error while Converting to Uipb ' + MessageToJson(self.m_pb))
+            raise Exception('Error while Converting to pb ' + MessageToJson(self.m_pb))
         else:
             self.m_response = resp;
             self.controlFlow(currentState=State.UPDATE)
@@ -67,6 +68,15 @@ class AUpdateEntityCF:
         if (pb == None):
             raise Exception('Error while update from db ')
         else:
+            self.m_pb = pb
+            self.controlFlow(currentState=State.CONVERT_TO_UIPB)
+
+    def convertToUiPb(self):
+        resp = self.m_convertor.convert(self.m_pb)
+        if (resp == None):
+            raise Exception('Error while Converting to Uipb ' + MessageToJson(self.m_pb))
+        else:
+            self.m_response = resp;
             self.controlFlow(currentState=State.DONE)
 
     def controlFlow(self, currentState):
@@ -74,9 +84,11 @@ class AUpdateEntityCF:
             self.checkIdIsEmpty()
         elif (currentState == State.CHECK_PB_IS_NOT_EMPTY):
             self.checkpbIsEmpty()
-        elif (currentState == State.CONVERT_TO_UIPB):
-            self.convertToUiPb()
+        elif (currentState == State.CONVERT_TO_PB):
+            self.convertToPb()
         elif (currentState == State.UPDATE):
             self.update()
+        elif (currentState == State.CONVERT_TO_UIPB):
+            self.convertToUiPb()
         elif (currentState == State.DONE):
             self.done()

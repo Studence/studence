@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "entityPb.proto";
+import "classPb.proto";
+import "teacherPb.proto";
+import "timePb.proto";
+
+
+message MemberPb {
+    EntityPb dbInfo = 1;
+    ClassPbRef classRef = 2;
+    repeated TeacherPbRef teacherRef = 3;
+    TimePb createdTime = 6;
+}

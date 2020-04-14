@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "entityUiPb.proto";
+import "classUiPb.proto";
+import "teacherUiPb.proto";
+import "timeUiPb.proto";
+
+
+message MemberUiPb {
+    EntityUiPb dbInfo = 1;
+    ClassUiPbRef classRef = 2;
+    repeated TeacherUiPbRef teacherRef = 3;
+    TimeUiPb createdTime = 6;
+}

@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+import "entityUiPb.proto";
+import "nameUiPb.proto";
+import "emailUiPb.proto";
+import "addressUiPb.proto";
+import "timeUiPb.proto";
+import "mobileUiPb.proto";
+import "summaryUiPb.proto";
+import "classUiPb.proto";
+
+message StudentUiPb {
+    EntityUiPb dbInfo = 1;
+    NameUiPb name = 2;
+    EmailUiPb email = 3;
+    AddressUiPb address = 4;
+    repeated MobileUiPb mobile = 5;
+    TimeUiPb createdTime = 6;
+    ClassUiPbRef classRef = 7;
+    string studentCode = 8;
+}
+
+
+message StudentSearchRequestUiPb {
+
+}
+
+message StudentSearchResponseUiPb {
+    SummaryUiPb summary = 1;
+    repeated StudentUiPb results = 2;
+}
+

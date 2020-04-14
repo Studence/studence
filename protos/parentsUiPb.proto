@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "nameUiPb.proto";
+import "mobileUiPb.proto";
+import "emailUiPb.proto";
+
+message ParentsUiPb {
+    NameUiPb name = 1;
+    repeated MobileUiPb mobile = 2;
+    EmailUiPb email = 3;
+    string parentsCode = 4;
+    ParentsTypeEnum parentType = 5;
+}
+
+message ParentsSearchRequestUiPb {
+
+}
+
+enum ParentsTypeEnum {
+    UNKNOWN_PARENTS = 0;
+    PARENT_FATHER = 1;
+    PARENT_MOTHER = 2;
+    PARENT_UNCLE = 3;
+    PARENT_AUNTY = 4;
+    PARENT_OTHERS = 5;
+}

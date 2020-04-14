@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+import "entityUiPb.proto";
+import "nameUiPb.proto";
+import "timeUiPb.proto";
+import "classTypeUiPb.proto";
+import "schoolUiPb.proto";
+import "sectionUiPb.proto";
+import "summaryUiPb.proto";
+
+
+message ClassUiPb {
+    EntityUiPb dbInfo = 1;
+    NameUiPb name = 2;
+    ClassTypeEnum classType = 3;
+    SectionTypeEnum sectionType = 4;
+    SchoolUiPbRef schoolRef = 5;
+    string classCode = 6;
+    TimeUiPb createdTime = 7;
+}
+
+message ClassUiPbRef {
+    string id = 1;
+    SchoolUiPbRef schoolRef = 2;
+    string classCode = 3;
+    ClassTypeEnum classType = 4;
+    SectionTypeEnum sectionType = 5;
+}
+
+message ClassSearchRequestUiPb{
+
+}
+
+message ClassSearchResponseUiPb {
+    SummaryUiPb summary = 1;
+    repeated ClassUiPb results = 2;
+}
+
+
