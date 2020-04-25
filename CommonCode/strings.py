@@ -66,3 +66,7 @@ class Strings:
                 resultString = resultString + Char1 + x.lower()
             counter = counter + 1
         return resultString
+
+    @staticmethod
+    def splitString(char, string):
+        return string.split(char)

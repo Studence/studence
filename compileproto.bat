@@ -1,5 +1,6 @@
 cd protos
 echo [COMPILEING  UIPROTOS AND PROTOS]
+protoc errorTypeUiPb.proto --python_out=..\Protobuff
 protoc summaryUiPb.proto --python_out=..\Protobuff
 protoc sectionUiPb.proto --python_out=..\Protobuff
 protoc userTypeUiPb.proto --python_out=..\Protobuff

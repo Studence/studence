@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+enum ErrorTypeEnum {
+    UNKNOWN_ERROR = 0;
+    INPUT_ERROR = 1;
+    INPUT_VALIDATION_ERROR = 2;
+    JSON_ERROR = 3;
+    JSON_VALIDATION_ERROR = 4;
+    UN_EXPECTED_ERROR = 5;
+    INVALID_RESPONSE = 6;
+}
+
+message ErrorUiPb {
+    ErrorTypeEnum errorType = 1;
+    string error = 2;
+    int32 status = 3;
+}
+

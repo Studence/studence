@@ -1,9 +1,10 @@
-from EntityModule.EntityServiceCF import EntityServiceCF
+from EntityModule.EnityChangeHandler import EntityChangeHandler
+from EntityModule.EntityTableName import EntityTableName
+from EntityModule.EntityUpdateListner import EntityTableUpdateListner
 
 
 class EntityService:
-    m_entityServiceCf = EntityServiceCF()
+    m_entityService = EntityTableUpdateListner(EntityChangeHandler(EntityTableName()))
 
     def getEntityId(self):
-        self.m_entityServiceCf.start()
-        return self.m_entityServiceCf.done()
+        return self.m_entityService.listenUpdate()

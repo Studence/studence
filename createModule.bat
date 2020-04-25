@@ -20,6 +20,8 @@ set tablename=TableName
 type nul > %1%tablename%.py
 set updator=Updator
 type nul > %1%updator%.py
+set cache=Cache
+type nul > %1%cache%.py
 cd ..
 
 

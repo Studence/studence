@@ -4,11 +4,12 @@ import "timeUiPb.proto";
 
 message EntityUiPb {
     string id = 1;
-    StatusEnum lifeTime = 2;
-    LocaleUiPb locale = 3;
+    int32 version = 2;
+    StatusEnum lifeTime = 3;
+    LocaleUiPb locale = 4;
 }
 
-message LocaleUiPb{
+message LocaleUiPb {
     TimeZoneEnum defaultTimeZone = 1;
 }
 

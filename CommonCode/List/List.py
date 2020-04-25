@@ -7,8 +7,8 @@ class List(MutableSequence):
     def __init__(self, l=[]):
         if type(l) is not list:
             raise ValueError()
-
         self._inner_list = l
+        self._inner_list.clear()
 
     def __len__(self):
         return len(self._inner_list)
@@ -30,3 +30,9 @@ class List(MutableSequence):
 
     def __print__(self):
         print(list(self._inner_list))
+
+    def __list__(self):
+        return copy.copy(list(self._inner_list))
+
+    def setList(self, list):
+        self._inner_list.extend(list)

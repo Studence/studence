@@ -1,11 +1,9 @@
-from PostgreSQLDatabase.CheckTableExixtsOrNot import CheckTableExixtsOrNot
+from AWSModules.SimpleDbOrpreationModule.CreateDomainInSimpleDb import CreateDomainInSimpleDb
 
 
-class EntityTableName:
-    m_checkTableExixts = CheckTableExixtsOrNot();
-
+class EntityTableName(CreateDomainInSimpleDb):
     def __init__(self):
-        self.m_checkTableExixts.checkTableExixts(tableName=self.tableName())
+        super(EntityTableName, self).__init__(tableName=self.tableName())
 
     def tableName(self):
         return "ENTITY"

@@ -2,6 +2,7 @@ from enum import Enum
 
 from google.protobuf.json_format import MessageToJson
 
+from BaseCodeModule.UpdateEnity import UpdateEntity
 from CommonQueryExecutor.UpdateQueryExecutor.UpdateQuery import UpdateQuery
 
 
@@ -10,8 +11,7 @@ class State(Enum):
     CHECK_PB_IS_NOT_EMPTY = 1;
     CONVERT_TO_PB = 2
     UPDATE = 3
-    CONVERT_TO_UIPB = 4
-    DONE = 5;
+    DONE = 4;
 
 
 class AUpdateEntityCF:
@@ -21,14 +21,17 @@ class AUpdateEntityCF:
     m_updator = None
     m_convertor = None
     m_comparetor = None;
-    m_instance = None
+    m_pbinstance = None
     m_table = None
+    m_updateListner = None
+    m_updatePb = None
 
-    def __init__(self, updator, convertor, comparetor, instance, table):
+    def __init__(self, updator, convertor, comparetor, pbinstance, table, updateListner):
         self.m_updator = updator;
         self.m_comparetor = comparetor
         self.m_convertor = convertor;
-        self.m_instance = instance
+        self.m_pbinstance = pbinstance
+        self.m_updateListner = updateListner
         self.m_table = table
 
     def start(self, id, pb):
@@ -63,20 +66,13 @@ class AUpdateEntityCF:
             self.controlFlow(currentState=State.UPDATE)
 
     def update(self):
-        updateQuery = UpdateQuery(self.m_comparetor, self.m_convertor, self.m_instance, self.m_table)
-        pb = updateQuery.update(id=self.m_getId, pb=self.m_response)
+        updateQuery = UpdateEntity(self.m_comparetor, self.m_convertor, self.m_table, self.m_pbinstance,
+                                   self.m_updateListner)
+        pb = updateQuery.update(pb=self.m_response)
         if (pb == None):
             raise Exception('Error while update from db ')
         else:
-            self.m_pb = pb
-            self.controlFlow(currentState=State.CONVERT_TO_UIPB)
-
-    def convertToUiPb(self):
-        resp = self.m_convertor.convert(self.m_pb)
-        if (resp == None):
-            raise Exception('Error while Converting to Uipb ' + MessageToJson(self.m_pb))
-        else:
-            self.m_response = resp;
+            self.m_updatePb = pb
             self.controlFlow(currentState=State.DONE)
 
     def controlFlow(self, currentState):
@@ -88,7 +84,5 @@ class AUpdateEntityCF:
             self.convertToPb()
         elif (currentState == State.UPDATE):
             self.update()
-        elif (currentState == State.CONVERT_TO_UIPB):
-            self.convertToUiPb()
         elif (currentState == State.DONE):
             self.done()
