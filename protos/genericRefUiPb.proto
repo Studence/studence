@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "nameUiPb.proto";
+
+
+message GenericRefUiPb {
+    string id = 1;
+    NameUiPb name = 2;
+    string code = 3;
+}

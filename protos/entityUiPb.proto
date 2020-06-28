@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import "timeUiPb.proto";
+
+message EntityUiPb {
+    string id = 1;
+    int32 version = 2;
+    StatusEnum lifeTime = 3;
+    LocaleUiPb locale = 4;
+}
+
+message LocaleUiPb {
+    TimeZoneEnum defaultTimeZone = 1;
+}
+
+enum StatusEnum {
+    UNKNOWN_STATUS = 0;
+    ACTIVE = 1;
+    DELETED = 2;
+    SUSPUNDED = 3;
+    BLOCKED = 4;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "namePb.proto";
+import "entityPb.proto";
+import "timePb.proto";
+
+message OrganisationPb {
+    EntityPb dbInfo = 1;
+    NamePb name = 2;
+    TimePb time = 3;
+    string orgCode = 4;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "namePb.proto";
+import "mobilePb.proto";
+import "parentsUiPb.proto";
+import "emailPb.proto";
+
+message ParentsPb {
+    NamePb name = 1;
+    repeated MobilePb mobile = 2;
+    EmailPb email = 3;
+    string parentsCode = 4;
+    ParentsTypeEnum parentType = 5;
+}

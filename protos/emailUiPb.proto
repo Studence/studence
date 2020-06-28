@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message EmailUiPb {
+    string localPart = 1;
+    string domain = 2;
+}

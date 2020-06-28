@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "entityPb.proto";
+import "timePb.proto";
+import "genericRefPb.proto";
+import "userTypeUiPb.proto";
+
+message DeviceInfoPb {
+    EntityPb dbInfo = 1;
+    string macAddId = 2;
+    string model = 3;
+    string osType = 4;
+    string state = 5;
+    TimePb createdTime = 6;
+    GenericRefPb user = 7;
+    UserTypeEnum userType = 8;
+}
+

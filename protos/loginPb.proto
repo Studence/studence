@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "entityPb.proto";
+import "emailPb.proto";
+import "genericRefPb.proto";
+import "userTypeUiPb.proto";
+import "timePb.proto";
+
+
+message LoginPb {
+    EntityPb dbInfo = 1;
+    EmailPb email = 2;
+    string password = 3;
+    GenericRefPb userRef = 4;
+    UserTypeEnum userType = 5;
+    TimePb createdTime = 6;
+}

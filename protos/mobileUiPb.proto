@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message MobileUiPb {
+    PhoneCodeEnum code = 1;
+    string number = 2;
+}
+
+enum PhoneCodeEnum{
+    UNKNOWN_CODE= 0;
+    ISD=1;
+}

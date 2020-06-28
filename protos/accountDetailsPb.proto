@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message AccountDetailsPb {
+    string accountNo = 1;
+    string ifscCode = 2;
+    string recipientName = 3;
+    string bankName = 4;
+    string branch = 5;
+    GooglePayPb googlePay = 6;
+}
+
+
+message GooglePayPb {
+    string upiId = 1;
+}

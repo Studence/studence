@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+import "entityPb.proto";
+import "namePb.proto";
+import "addressPb.proto";
+import "timePb.proto";
+import "mobilePb.proto";
+import "classTypeUiPb.proto";
+import "sectionUiPb.proto";
+import "genericRefPb.proto";
+import "accountDetailsPb.proto";
+import "accountDetailsUiPb.proto";
+import "booleanTypeUiPb.proto";
+
+message SchoolPb {
+    EntityPb dbInfo = 1;
+    NamePb name = 2;
+    AddressPb address = 3;
+    repeated MobilePb mobile = 4;
+    TimePb createdTime = 5;
+    GenericRefPb organisation = 6;
+    string schoolCode = 7;
+    AccountUseTypeEnum accountUseType = 8;
+    AccountDetailsPb accountDetails = 9;
+    repeated ClassTypeEnum classType = 10;
+    repeated SectionTypeEnum sectionType = 11;
+    BooleanTypeEnum accountSection = 12;
+}
+
+message SchoolPbRef {
+    string id = 1;
+    GenericRefPb organisation = 2;
+    string schoolCode = 3;
+    repeated ClassTypeEnum classType = 10;
+    repeated SectionTypeEnum sectionType = 11;
+}
