@@ -1,9 +1,9 @@
 from AWSModules.DynanoDbDatabaseModule.DynamodbKeyTypeEnum import DynamoDbKeyTypeEnum
-from BaseCodeModule.BasicTableEntity import BasicTableEntity
+from BaseCodeModule.BaseTableEntity import BaseTableEntity
 from OrganisationModule.OrganisationConfig import OrganisationConfig
 
 
-class OrganisationTableName(BasicTableEntity):
+class OrganisationTableName(BaseTableEntity):
 
     def __init__(self):
         super(OrganisationTableName, self).__init__(tableName=self.tableName(), keySchema=self.tableKeySchemaType(),

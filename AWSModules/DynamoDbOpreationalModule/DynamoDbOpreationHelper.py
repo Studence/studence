@@ -2,7 +2,7 @@ from addict import Dict
 
 from AWSModules.DynanoDbDatabaseModule.AttributeTypeEnum import AttributeTypeEnum
 from AWSModules.DynanoDbDatabaseModule.DynamodbKeyTypeEnum import DynamoDbKeyTypeEnum
-from BaseCodeModule.BasicPbIndexGenreator import BasicEntityIndex
+from BaseCodeModule.BasePbIndexGenreator import BasicEntityIndex
 from CommonCode.List.List import List
 from CommonCode.strings import Strings
 

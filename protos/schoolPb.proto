@@ -10,6 +10,7 @@ import "sectionUiPb.proto";
 import "genericRefPb.proto";
 import "accountDetailsPb.proto";
 import "accountDetailsUiPb.proto";
+import "booleanTypeUiPb.proto";
 
 message SchoolPb {
     EntityPb dbInfo = 1;
@@ -23,6 +24,7 @@ message SchoolPb {
     AccountDetailsPb accountDetails = 9;
     repeated ClassTypeEnum classType = 10;
     repeated SectionTypeEnum sectionType = 11;
+    BooleanTypeEnum accountSection = 12;
 }
 
 message SchoolPbRef {

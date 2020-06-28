@@ -3,7 +3,6 @@ from enum import Enum
 from google.protobuf.json_format import MessageToJson
 
 from BaseCodeModule.UpdateEnity import UpdateEntity
-from CommonQueryExecutor.UpdateQueryExecutor.UpdateQuery import UpdateQuery
 
 
 class State(Enum):

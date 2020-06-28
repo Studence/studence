@@ -1,5 +1,5 @@
 from AWSModules.SimpleDbModule.AttributeMapper import AttributeMapper
-from BaseCodeModule.BasicPbIndexGenreator import BasicEntityIndex
+from BaseCodeModule.BasePbIndexGenreator import BasicEntityIndex
 from CommonCode.List.List import List
 from CommonCode.strings import Strings
 

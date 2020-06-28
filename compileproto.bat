@@ -1,6 +1,7 @@
 cd protos
 echo [COMPILEING  UIPROTOS AND PROTOS]
 protoc errorTypeUiPb.proto --python_out=..\Protobuff
+protoc booleanTypeUiPb.proto --python_out=..\Protobuff
 protoc summaryUiPb.proto --python_out=..\Protobuff
 protoc sectionUiPb.proto --python_out=..\Protobuff
 protoc userTypeUiPb.proto --python_out=..\Protobuff
@@ -31,12 +32,14 @@ protoc parentsUiPb.proto --python_out=..\Protobuff
 protoc parentsPb.proto --python_out=..\Protobuff
 protoc studentUiPb.proto --python_out=..\Protobuff
 protoc studentPb.proto --python_out=..\Protobuff
-protoc teacherUiPb.proto --python_out=..\Protobuff
-protoc teacherPb.proto --python_out=..\Protobuff
+protoc userUiPb.proto --python_out=..\Protobuff
+protoc userPb.proto --python_out=..\Protobuff
 protoc attendanceUiPb.proto --python_out=..\Protobuff
 protoc attendancePb.proto --python_out=..\Protobuff
 protoc loginUiPb.proto --python_out=..\Protobuff
 protoc loginPb.proto --python_out=..\Protobuff
 protoc memberUiPb.proto --python_out=..\Protobuff
 protoc memberPb.proto --python_out=..\Protobuff
+protoc deviceInfoUiPb.proto --python_out=..\Protobuff
+protoc deviceInfoPb.proto --python_out=..\Protobuff
 cd ..

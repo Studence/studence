@@ -8,11 +8,12 @@ import "userTypeUiPb.proto";
 message DeviceInfoUiPb {
     EntityUiPb dbInfo = 1;
     string macAddId = 2;
-    string model = 3;
-    string osType = 4;
-    string state = 5;
-    TimeUiPb createdTime = 6;
-    GenericRefUiPb user = 7;
-    UserTypeEnum userType = 8;
+    string deviceId = 3;
+    string model = 4;
+    string osType = 5;
+    string state = 6;
+    TimeUiPb createdTime = 7;
+    GenericRefUiPb user = 8;
+    UserTypeEnum userType = 9;
 }
 

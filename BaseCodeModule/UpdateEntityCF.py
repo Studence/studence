@@ -36,6 +36,7 @@ class UpdateEntityCF():
 
     def start(self, pb):
         self.m_newPb = pb
+        self.m_newPb.dbInfo.version = self.m_newPb.dbInfo.version + 1
         self.m_id = self.m_newPb.dbInfo.id
         self.controlFlow(currentState=State.CHECK_PB_IS_EMPTY)
 

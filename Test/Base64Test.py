@@ -1,38 +1,7 @@
-class GlobalWealth(object):
-    def __init__(self):
-        self._global_wealth = 10.0
-        self._observers = []
+from CryptoModule.EncryptorAndDecryptor import EncryptorAndDecryptor
 
-    @property
-    def global_wealth(self):
-        return self._global_wealth
+chiper = EncryptorAndDecryptor()
 
-    @global_wealth.setter
-    def global_wealth(self, value):
-        self._global_wealth = value
-        for callback in self._observers:
-            print('announcing change')
-            callback(self._global_wealth)
-
-    def bind_to(self, callback):
-        print('bound')
-        self._observers.append(callback)
-
-
-class Person(object):
-    def __init__(self, data):
-        self.wealth = 1.0
-        self.data = data
-        self.data.bind_to(self.update_how_happy)
-        self.happiness = self.wealth / self.data.global_wealth
-
-    def update_how_happy(self, global_wealth):
-        self.happiness = self.wealth / global_wealth
-
-
-if __name__ == '__main__':
-    data = GlobalWealth()
-    p = Person(data)
-    print(p.happiness)
-    data.global_wealth = 1.0
-    print(p.happiness)
+resp = chiper.decode(
+    chiperText='gAAAAABepDfFZgee6O6kUEJC0wWqw4APfw4imhkn7ITzknJN7dNSG8txdS0Cso_elBsrhL9wEqpu6Gu5dqYHzXWSx0nua_OZGOAMzRmqBDwBYnqRzRF-B9jHGxj-fA4IFG9nSjeZvWRBIIboxlNrwTvM5aOSfRZJjk2ZpCA9pMB_XqJIgkg9GUljhUc2mArJFBbWrYnDaNzpmi8CPSkn4I6-uJKZ_-vNpG-o6iMaDjxyoa6QuF5G2Ri9gPCWgBYF_laiCVBy0ux7NDP3tM5oxvhRsvRrqCjKFicEW96tRyxiX8AL1n6g8PXMBvTaBakatW3qT256rWppTOXWTO1OY43B1kfIrWaqWpOqBXJSxRVOvUnj9U2pqVzaN_ljoXP91axMyZ_EBY7gujmtpGzHXss8w_hUOb12Zv-JNo2Hn_mLe2m_f_hc3vs7VQwOg9Qpg5KKLLd9_psV')
+print(resp)

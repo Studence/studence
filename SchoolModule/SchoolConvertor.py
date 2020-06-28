@@ -42,4 +42,5 @@ class SchoolConvertor:
             schoolUiPb.accountUseType = schoolPb.accountUseType
         if (Strings.notEmpty(schoolPb.accountDetails.accountNo)):
             self.m_accountDetailsConvertor.convert(pb=schoolPb.accountDetails, uipb=schoolUiPb.accountDetails)
+        schoolUiPb.accountSection = schoolPb.accountSection
         return schoolUiPb

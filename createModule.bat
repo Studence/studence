@@ -10,8 +10,8 @@ set convertor=Convertor
 type nul > %1%convertor%.py
 set helper=Helper
 type nul > %1%helper%.py
-set searchconfig=SearchConfig
-type nul > %1%searchconfig%.py
+set config=Config
+type nul > %1%config%.py
 set search=Searcher
 type nul > %1%search%.py
 set service=Service
@@ -22,6 +22,10 @@ set updator=Updator
 type nul > %1%updator%.py
 set cache=Cache
 type nul > %1%cache%.py
+set PbIndexGenerator=PbIndexGenerator
+type nul > %1%PbIndexGenerator%.py
+set UpdateListner=UpdateListner
+type nul > %1%UpdateListner%.py
 cd ..
 
 

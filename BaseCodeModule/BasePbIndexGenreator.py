@@ -15,7 +15,7 @@ class BasicEntityIndex(Enum):
         return list(map(lambda c: c.value, BasicEntityIndex))
 
 
-class BasicPbIndexGenreator:
+class BasePbIndexGenreator:
     m_encoder = EncryptorAndDecryptor()
 
     def genereate(self, pb):

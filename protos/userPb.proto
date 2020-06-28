@@ -7,7 +7,7 @@ import "emailPb.proto";
 import "schoolPb.proto";
 import "timePb.proto";
 
-message TeacherPb {
+message UserPb {
     EntityPb dbInfo = 1;
     NamePb name = 2;
     MobilePb mobile = 3;
@@ -17,7 +17,7 @@ message TeacherPb {
     TimePb createdTime =7;
 }
 
-message TeacherPbRef {
+message UserPbRef {
     string id = 1;
     NamePb name = 2;
     string teacherCode = 3;

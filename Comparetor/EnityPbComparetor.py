@@ -19,6 +19,19 @@ class EntityPbComparetor:
         else:
             assert True, "id Cannot be Empty"
 
+        if (oldPb.version > 0):
+            if (newPb.version > 0):
+                if (oldPb.version < newPb.version):
+                    oldPb.version = newPb.version
+                else:
+                    raise Exception(
+                        'Version of new pb is should be greator then old' + MessageToJson(newPb) + " " + MessageToJson(
+                            oldPb))
+            else:
+                assert True, "version cant be zero"
+        else:
+            assert True, "version cant be zero"
+
         if (oldPb.lifeTime != UNKNOWN_STATUS):
             if (newPb.lifeTime != UNKNOWN_STATUS):
                 oldPb.lifeTime = newPb.lifeTime

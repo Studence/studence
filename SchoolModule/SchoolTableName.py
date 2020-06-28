@@ -1,12 +1,18 @@
-from PostgreSQLDatabase.CheckTableExixtsOrNot import CheckTableExixtsOrNot
+from AWSModules.DynanoDbDatabaseModule.DynamodbKeyTypeEnum import DynamoDbKeyTypeEnum
+from BaseCodeModule.BaseTableEntity import BaseTableEntity
+from SchoolModule.SchoolConfig import SchoolConfig
 
 
-class SchoolTableName:
+class SchoolTableName(BaseTableEntity):
 
-    m_checkTableExixts = CheckTableExixtsOrNot();
 
     def __init__(self):
-        self.m_checkTableExixts.checkTableExixts(tableName=self.tableName())
+        super(SchoolTableName, self).__init__(tableName=self.tableName(), keySchema=self.tableKeySchemaType(),
+                                                    config=SchoolConfig.list())
+
 
     def tableName(self):
         return "SCHOOL"
+
+    def tableKeySchemaType(self):
+        return DynamoDbKeyTypeEnum.HASH_KEY

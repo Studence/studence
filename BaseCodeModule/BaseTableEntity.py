@@ -2,7 +2,7 @@ from AWSModules.DynamoDbOpreationalModule.CreateTableOpreationInDynamodb import 
 from AWSModules.SimpleDbOrpreationModule.CreateDomainInSimpleDb import CreateDomainInSimpleDb
 
 
-class BasicTableEntity(CreateDomainInSimpleDb, CreateTableOpreationInDynamodb):
+class BaseTableEntity(CreateDomainInSimpleDb, CreateTableOpreationInDynamodb):
 
     def __init__(self, tableName, keySchema, config):
         CreateDomainInSimpleDb.__init__(self=self,tableName=tableName)

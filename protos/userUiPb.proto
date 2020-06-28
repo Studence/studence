@@ -7,7 +7,7 @@ import "emailUiPb.proto";
 import "schoolUiPb.proto";
 import "timeUiPb.proto";
 
-message TeacherUiPb {
+message UserUiPb {
     EntityUiPb dbInfo = 1;
     NameUiPb name = 2;
     MobileUiPb mobile = 3;
@@ -17,7 +17,7 @@ message TeacherUiPb {
     TimeUiPb createdTime =7;
 }
 
-message TeacherUiPbRef {
+message UserUiPbRef {
     string id = 1;
     NameUiPb name = 2;
     string teacherCode = 3;

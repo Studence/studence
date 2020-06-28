@@ -11,7 +11,9 @@ from RequestHandlerModule.RequestHandler import RequestHandler
 from SchoolModule.SchoolService import SchoolService
 
 application = flask.Flask(__name__)
-RunFromMAinModule().setRunFromMainModude()
+m_runFromMainModule = RunFromMAinModule()
+m_runFromMainModule.setRunFromMainModule()
+
 
 # Only enable Flask debugging if an env var is set to true
 # application.debug = os.environ.get('FLASK_DEBUG') in ['true', 'True']

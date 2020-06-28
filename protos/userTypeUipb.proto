@@ -4,5 +4,6 @@ enum UserTypeEnum {
     UNKNOWN_USER = 0;
     USER_ADMINISTRATOR = 1;
     USER_TEACHER = 3;
-    User_OTHERS = 4;
+    USER_ACCOUNTANT = 4;
+    USER_OTHERS = 5;
 }

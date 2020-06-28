@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x0e\x65ntityPb.proto\x1a\x0etimeUiPb.proto\x1a\x10\x65ntityUiPb.proto\"P\n\x08\x45ntityPb\x12\n\n\x02id\x18\x01 \x01(\t\x12\x1d\n\x08lifeTime\x18\x02 \x01(\x0e\x32\x0b.StatusEnum\x12\x19\n\x06locale\x18\x03 \x01(\x0b\x32\t.LocalePb\"2\n\x08LocalePb\x12&\n\x0f\x64\x65\x66\x61ultTimeZone\x18\x01 \x01(\x0e\x32\r.TimeZoneEnumb\x06proto3'
+  serialized_pb=b'\n\x0e\x65ntityPb.proto\x1a\x0etimeUiPb.proto\x1a\x10\x65ntityUiPb.proto\"a\n\x08\x45ntityPb\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0f\n\x07version\x18\x02 \x01(\x05\x12\x1d\n\x08lifeTime\x18\x03 \x01(\x0e\x32\x0b.StatusEnum\x12\x19\n\x06locale\x18\x04 \x01(\x0b\x32\t.LocalePb\"2\n\x08LocalePb\x12&\n\x0f\x64\x65\x66\x61ultTimeZone\x18\x01 \x01(\x0e\x32\r.TimeZoneEnumb\x06proto3'
   ,
   dependencies=[timeUiPb__pb2.DESCRIPTOR,entityUiPb__pb2.DESCRIPTOR,])
 
@@ -42,15 +42,22 @@ _ENTITYPB = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='lifeTime', full_name='EntityPb.lifeTime', index=1,
-      number=2, type=14, cpp_type=8, label=1,
+      name='version', full_name='EntityPb.version', index=1,
+      number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='locale', full_name='EntityPb.locale', index=2,
-      number=3, type=11, cpp_type=10, label=1,
+      name='lifeTime', full_name='EntityPb.lifeTime', index=2,
+      number=3, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='locale', full_name='EntityPb.locale', index=3,
+      number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -68,7 +75,7 @@ _ENTITYPB = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=52,
-  serialized_end=132,
+  serialized_end=149,
 )
 
 
@@ -98,8 +105,8 @@ _LOCALEPB = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=134,
-  serialized_end=184,
+  serialized_start=151,
+  serialized_end=201,
 )
 
 _ENTITYPB.fields_by_name['lifeTime'].enum_type = entityUiPb__pb2._STATUSENUM

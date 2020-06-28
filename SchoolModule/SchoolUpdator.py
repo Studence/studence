@@ -83,4 +83,6 @@ class SchoolUpdator:
         else:
             raise Exception('School at least at least have one section')
 
+        schoolPb.accountSection = schoolUiPb.accountSection
+
         return schoolPb

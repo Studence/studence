@@ -40,5 +40,6 @@ class SchoolComparetor:
                 raise Exception('accountUseType cannot be UNKNOWN_ACCOUNT_TYPE' + MessageToJson(newPb))
 
         self.m_accountDetailsComparetor.compare(newPb=newPb.accountDetails, oldPb=oldPb.accountDetails)
+        oldPb.accountSection = newPb.accountSection
 
         return oldPb

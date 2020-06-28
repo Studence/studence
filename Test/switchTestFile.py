@@ -1,4 +1,6 @@
-from simpledbdev2.simpledb_dev import SimpleDBTest, SimpleDBDevTestCase
+from Utitlty.CSVUtility import CSVUtility
 
-sbd =SimpleDBDevTestCase()
-sbd.test_all()
+csvutility = CSVUtility()
+row = {"hello", "hi"}
+csvObj = csvutility.createCSVFile("demo")
+print(csvutility.writeFile(csvObj, row))

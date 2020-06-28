@@ -48,6 +48,7 @@ class ACreateEntityCF:
         if (Strings.notEmpty(self.m_id)):
             self.m_uiPb.dbInfo.id = self.m_id
             self.m_uiPb.dbInfo.lifeTime = ACTIVE
+            self.m_uiPb.dbInfo.version = 1
             self.controlFlow(currentState=State.CONVERT_TO_PB)
         else:
             # self.controlFlow(currentState=State.DONE)

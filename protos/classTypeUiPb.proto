@@ -20,4 +20,5 @@ enum ClassTypeEnum {
     CLASS_TENTH = 16;
     CLASS_ELEVENTH = 17;
     CLASS_TWELVETH = 18;
+    CLASS_ALL = 19;
 }
