@@ -25,6 +25,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\x0f\x63lassUiPb.proto\x1a\x10\x65ntityUiPb.proto\x1a\x0enameUiPb.proto\x1a\x0etimeUiPb.proto\x1a\x13\x63lassTypeUiPb.proto\x1a\x10schoolUiPb.proto\x1a\x11sectionUiPb.proto\x1a\x11summaryUiPb.proto\"\xe1\x01\n\tClassUiPb\x12\x1b\n\x06\x64\x62Info\x18\x01 \x01(\x0b\x32\x0b.EntityUiPb\x12\x17\n\x04name\x18\x02 \x01(\x0b\x32\t.NameUiPb\x12!\n\tclassType\x18\x03 \x01(\x0e\x32\x0e.ClassTypeEnum\x12%\n\x0bsectionType\x18\x04 \x01(\x0e\x32\x10.SectionTypeEnum\x12!\n\tschoolRef\x18\x05 \x01(\x0b\x32\x0e.SchoolUiPbRef\x12\x11\n\tclassCode\x18\x06 \x01(\t\x12\x1e\n\x0b\x63reatedTime\x18\x07 \x01(\x0b\x32\t.TimeUiPb\"\x9a\x01\n\x0c\x43lassUiPbRef\x12\n\n\x02id\x18\x01 \x01(\t\x12!\n\tschoolRef\x18\x02 \x01(\x0b\x32\x0e.SchoolUiPbRef\x12\x11\n\tclassCode\x18\x03 \x01(\t\x12!\n\tclassType\x18\x04 \x01(\x0e\x32\x0e.ClassTypeEnum\x12%\n\x0bsectionType\x18\x05 \x01(\x0e\x32\x10.SectionTypeEnum\"\x18\n\x16\x43lassSearchRequestUiPb\"U\n\x17\x43lassSearchResponseUiPb\x12\x1d\n\x07summary\x18\x01 \x01(\x0b\x32\x0c.SummaryUiPb\x12\x1b\n\x07results\x18\x02 \x03(\x0b\x32\n.ClassUiPbb\x06proto3'
   ,
   dependencies=[entityUiPb__pb2.DESCRIPTOR,nameUiPb__pb2.DESCRIPTOR,timeUiPb__pb2.DESCRIPTOR,classTypeUiPb__pb2.DESCRIPTOR,schoolUiPb__pb2.DESCRIPTOR,sectionUiPb__pb2.DESCRIPTOR,summaryUiPb__pb2.DESCRIPTOR,])
@@ -38,6 +39,7 @@ _CLASSUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='dbInfo', full_name='ClassUiPb.dbInfo', index=0,
@@ -45,49 +47,49 @@ _CLASSUIPB = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='name', full_name='ClassUiPb.name', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='classType', full_name='ClassUiPb.classType', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='sectionType', full_name='ClassUiPb.sectionType', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='schoolRef', full_name='ClassUiPb.schoolRef', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='classCode', full_name='ClassUiPb.classCode', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='createdTime', full_name='ClassUiPb.createdTime', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -111,6 +113,7 @@ _CLASSUIPBREF = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='id', full_name='ClassUiPbRef.id', index=0,
@@ -118,35 +121,35 @@ _CLASSUIPBREF = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='schoolRef', full_name='ClassUiPbRef.schoolRef', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='classCode', full_name='ClassUiPbRef.classCode', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='classType', full_name='ClassUiPbRef.classType', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='sectionType', full_name='ClassUiPbRef.sectionType', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -170,6 +173,7 @@ _CLASSSEARCHREQUESTUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
@@ -194,6 +198,7 @@ _CLASSSEARCHRESPONSEUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='summary', full_name='ClassSearchResponseUiPb.summary', index=0,
@@ -201,14 +206,14 @@ _CLASSSEARCHRESPONSEUIPB = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='results', full_name='ClassSearchResponseUiPb.results', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],

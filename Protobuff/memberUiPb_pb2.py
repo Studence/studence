@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 import entityUiPb_pb2 as entityUiPb__pb2
 import classUiPb_pb2 as classUiPb__pb2
-import teacherUiPb_pb2 as teacherUiPb__pb2
+import userUiPb_pb2 as userUiPb__pb2
 import timeUiPb_pb2 as timeUiPb__pb2
 
 
@@ -22,9 +22,10 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x10memberUiPb.proto\x1a\x10\x65ntityUiPb.proto\x1a\x0f\x63lassUiPb.proto\x1a\x11teacherUiPb.proto\x1a\x0etimeUiPb.proto\"\x8f\x01\n\nMemberUiPb\x12\x1b\n\x06\x64\x62Info\x18\x01 \x01(\x0b\x32\x0b.EntityUiPb\x12\x1f\n\x08\x63lassRef\x18\x02 \x01(\x0b\x32\r.ClassUiPbRef\x12#\n\nteacherRef\x18\x03 \x03(\x0b\x32\x0f.TeacherUiPbRef\x12\x1e\n\x0b\x63reatedTime\x18\x06 \x01(\x0b\x32\t.TimeUiPbb\x06proto3'
+  create_key=_descriptor._internal_create_key,
+  serialized_pb=b'\n\x10memberUiPb.proto\x1a\x10\x65ntityUiPb.proto\x1a\x0f\x63lassUiPb.proto\x1a\x0euserUiPb.proto\x1a\x0etimeUiPb.proto\"\x89\x01\n\nMemberUiPb\x12\x1b\n\x06\x64\x62Info\x18\x01 \x01(\x0b\x32\x0b.EntityUiPb\x12\x1f\n\x08\x63lassRef\x18\x02 \x01(\x0b\x32\r.ClassUiPbRef\x12\x1d\n\x07userRef\x18\x03 \x03(\x0b\x32\x0c.UserUiPbRef\x12\x1e\n\x0b\x63reatedTime\x18\x06 \x01(\x0b\x32\t.TimeUiPbb\x06proto3'
   ,
-  dependencies=[entityUiPb__pb2.DESCRIPTOR,classUiPb__pb2.DESCRIPTOR,teacherUiPb__pb2.DESCRIPTOR,timeUiPb__pb2.DESCRIPTOR,])
+  dependencies=[entityUiPb__pb2.DESCRIPTOR,classUiPb__pb2.DESCRIPTOR,userUiPb__pb2.DESCRIPTOR,timeUiPb__pb2.DESCRIPTOR,])
 
 
 
@@ -35,6 +36,7 @@ _MEMBERUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='dbInfo', full_name='MemberUiPb.dbInfo', index=0,
@@ -42,28 +44,28 @@ _MEMBERUIPB = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='classRef', full_name='MemberUiPb.classRef', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='teacherRef', full_name='MemberUiPb.teacherRef', index=2,
+      name='userRef', full_name='MemberUiPb.userRef', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='createdTime', full_name='MemberUiPb.createdTime', index=3,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -76,13 +78,13 @@ _MEMBERUIPB = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=91,
-  serialized_end=234,
+  serialized_start=88,
+  serialized_end=225,
 )
 
 _MEMBERUIPB.fields_by_name['dbInfo'].message_type = entityUiPb__pb2._ENTITYUIPB
 _MEMBERUIPB.fields_by_name['classRef'].message_type = classUiPb__pb2._CLASSUIPBREF
-_MEMBERUIPB.fields_by_name['teacherRef'].message_type = teacherUiPb__pb2._TEACHERUIPBREF
+_MEMBERUIPB.fields_by_name['userRef'].message_type = userUiPb__pb2._USERUIPBREF
 _MEMBERUIPB.fields_by_name['createdTime'].message_type = timeUiPb__pb2._TIMEUIPB
 DESCRIPTOR.message_types_by_name['MemberUiPb'] = _MEMBERUIPB
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)

@@ -19,7 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x13\x63lassTypeUiPb.proto*\xda\x02\n\rClassTypeEnum\x12\x11\n\rUNKNOWN_CLASS\x10\x00\x12\x14\n\x10\x43LASS_MONTESSORI\x10\x01\x12\x11\n\rCLASS_NURSERY\x10\x02\x12\x12\n\x0e\x43LASS_LOWER_KG\x10\x03\x12\x12\n\x0e\x43LASS_UPPER_KG\x10\x04\x12\x0e\n\nCLASS_PREP\x10\x05\x12\x0f\n\x0b\x43LASS_FIRST\x10\x06\x12\x10\n\x0c\x43LASS_SECOND\x10\x07\x12\x0f\n\x0b\x43LASS_THIRD\x10\x08\x12\x0f\n\x0b\x43LASS_FORTH\x10\t\x12\x0f\n\x0b\x43LASS_FIFTH\x10\n\x12\x0f\n\x0b\x43LASS_SIXTH\x10\x0b\x12\x11\n\rCLASS_SEVENTH\x10\x0c\x12\x10\n\x0c\x43LASS_EIGHTH\x10\x0e\x12\x10\n\x0c\x43LASS_NINETH\x10\x0f\x12\x0f\n\x0b\x43LASS_TENTH\x10\x10\x12\x12\n\x0e\x43LASS_ELEVENTH\x10\x11\x12\x12\n\x0e\x43LASS_TWELVETH\x10\x12\x62\x06proto3'
+  create_key=_descriptor._internal_create_key,
+  serialized_pb=b'\n\x13\x63lassTypeUiPb.proto*\xe9\x02\n\rClassTypeEnum\x12\x11\n\rUNKNOWN_CLASS\x10\x00\x12\x14\n\x10\x43LASS_MONTESSORI\x10\x01\x12\x11\n\rCLASS_NURSERY\x10\x02\x12\x12\n\x0e\x43LASS_LOWER_KG\x10\x03\x12\x12\n\x0e\x43LASS_UPPER_KG\x10\x04\x12\x0e\n\nCLASS_PREP\x10\x05\x12\x0f\n\x0b\x43LASS_FIRST\x10\x06\x12\x10\n\x0c\x43LASS_SECOND\x10\x07\x12\x0f\n\x0b\x43LASS_THIRD\x10\x08\x12\x0f\n\x0b\x43LASS_FORTH\x10\t\x12\x0f\n\x0b\x43LASS_FIFTH\x10\n\x12\x0f\n\x0b\x43LASS_SIXTH\x10\x0b\x12\x11\n\rCLASS_SEVENTH\x10\x0c\x12\x10\n\x0c\x43LASS_EIGHTH\x10\x0e\x12\x10\n\x0c\x43LASS_NINETH\x10\x0f\x12\x0f\n\x0b\x43LASS_TENTH\x10\x10\x12\x12\n\x0e\x43LASS_ELEVENTH\x10\x11\x12\x12\n\x0e\x43LASS_TWELVETH\x10\x12\x12\r\n\tCLASS_ALL\x10\x13\x62\x06proto3'
 )
 
 _CLASSTYPEENUM = _descriptor.EnumDescriptor(
@@ -27,84 +28,108 @@ _CLASSTYPEENUM = _descriptor.EnumDescriptor(
   full_name='ClassTypeEnum',
   filename=None,
   file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
       name='UNKNOWN_CLASS', index=0, number=0,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_MONTESSORI', index=1, number=1,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_NURSERY', index=2, number=2,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_LOWER_KG', index=3, number=3,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_UPPER_KG', index=4, number=4,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_PREP', index=5, number=5,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_FIRST', index=6, number=6,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_SECOND', index=7, number=7,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_THIRD', index=8, number=8,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_FORTH', index=9, number=9,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_FIFTH', index=10, number=10,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_SIXTH', index=11, number=11,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_SEVENTH', index=12, number=12,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_EIGHTH', index=13, number=14,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_NINETH', index=14, number=15,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_TENTH', index=15, number=16,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_ELEVENTH', index=16, number=17,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='CLASS_TWELVETH', index=17, number=18,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CLASS_ALL', index=18, number=19,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
   serialized_start=24,
-  serialized_end=370,
+  serialized_end=385,
 )
 _sym_db.RegisterEnumDescriptor(_CLASSTYPEENUM)
 
@@ -127,6 +152,7 @@ CLASS_NINETH = 15
 CLASS_TENTH = 16
 CLASS_ELEVENTH = 17
 CLASS_TWELVETH = 18
+CLASS_ALL = 19
 
 
 DESCRIPTOR.enum_types_by_name['ClassTypeEnum'] = _CLASSTYPEENUM

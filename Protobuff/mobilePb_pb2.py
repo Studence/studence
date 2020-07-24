@@ -19,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\x0emobilePb.proto\x1a\x10mobileUiPb.proto\"8\n\x08MobilePb\x12\x1c\n\x04\x63ode\x18\x01 \x01(\x0e\x32\x0e.PhoneCodeEnum\x12\x0e\n\x06number\x18\x02 \x01(\tb\x06proto3'
   ,
   dependencies=[mobileUiPb__pb2.DESCRIPTOR,])
@@ -32,6 +33,7 @@ _MOBILEPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='code', full_name='MobilePb.code', index=0,
@@ -39,14 +41,14 @@ _MOBILEPB = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='number', full_name='MobilePb.number', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],

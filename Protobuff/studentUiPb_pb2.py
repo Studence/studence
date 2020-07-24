@@ -26,7 +26,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x11studentUiPb.proto\x1a\x10\x65ntityUiPb.proto\x1a\x0enameUiPb.proto\x1a\x0f\x65mailUiPb.proto\x1a\x11\x61\x64\x64ressUiPb.proto\x1a\x0etimeUiPb.proto\x1a\x10mobileUiPb.proto\x1a\x11summaryUiPb.proto\x1a\x0f\x63lassUiPb.proto\"\xf0\x01\n\x0bStudentUiPb\x12\x1b\n\x06\x64\x62Info\x18\x01 \x01(\x0b\x32\x0b.EntityUiPb\x12\x17\n\x04name\x18\x02 \x01(\x0b\x32\t.NameUiPb\x12\x19\n\x05\x65mail\x18\x03 \x01(\x0b\x32\n.EmailUiPb\x12\x1d\n\x07\x61\x64\x64ress\x18\x04 \x01(\x0b\x32\x0c.AddressUiPb\x12\x1b\n\x06mobile\x18\x05 \x03(\x0b\x32\x0b.MobileUiPb\x12\x1e\n\x0b\x63reatedTime\x18\x06 \x01(\x0b\x32\t.TimeUiPb\x12\x1f\n\x08\x63lassRef\x18\x07 \x01(\x0b\x32\r.ClassUiPbRef\x12\x13\n\x0bstudentCode\x18\x08 \x01(\t\"\x1a\n\x18StudentSearchRequestUiPb\"Y\n\x19StudentSearchResponseUiPb\x12\x1d\n\x07summary\x18\x01 \x01(\x0b\x32\x0c.SummaryUiPb\x12\x1d\n\x07results\x18\x02 \x03(\x0b\x32\x0c.StudentUiPbb\x06proto3'
+  create_key=_descriptor._internal_create_key,
+  serialized_pb=b'\n\x11studentUiPb.proto\x1a\x10\x65ntityUiPb.proto\x1a\x0enameUiPb.proto\x1a\x0f\x65mailUiPb.proto\x1a\x11\x61\x64\x64ressUiPb.proto\x1a\x0etimeUiPb.proto\x1a\x10mobileUiPb.proto\x1a\x11summaryUiPb.proto\x1a\x0f\x63lassUiPb.proto\"\xf0\x01\n\x0bStudentUiPb\x12\x1b\n\x06\x64\x62Info\x18\x01 \x01(\x0b\x32\x0b.EntityUiPb\x12\x17\n\x04name\x18\x02 \x01(\x0b\x32\t.NameUiPb\x12\x19\n\x05\x65mail\x18\x03 \x01(\x0b\x32\n.EmailUiPb\x12\x1d\n\x07\x61\x64\x64ress\x18\x04 \x01(\x0b\x32\x0c.AddressUiPb\x12\x1b\n\x06mobile\x18\x05 \x03(\x0b\x32\x0b.MobileUiPb\x12\x1e\n\x0b\x63reatedTime\x18\x06 \x01(\x0b\x32\t.TimeUiPb\x12\x1f\n\x08\x63lassRef\x18\x07 \x01(\x0b\x32\r.ClassUiPbRef\x12\x13\n\x0bstudentCode\x18\x08 \x01(\t\"k\n\x0eStudentUiPbRef\x12\n\n\x02id\x18\x01 \x01(\t\x12\x17\n\x04name\x18\x02 \x01(\x0b\x32\t.NameUiPb\x12\x1f\n\x08\x63lassRef\x18\x03 \x01(\x0b\x32\r.ClassUiPbRef\x12\x13\n\x0bstudentCode\x18\x04 \x01(\t\"\x1a\n\x18StudentSearchRequestUiPb\"Y\n\x19StudentSearchResponseUiPb\x12\x1d\n\x07summary\x18\x01 \x01(\x0b\x32\x0c.SummaryUiPb\x12\x1d\n\x07results\x18\x02 \x03(\x0b\x32\x0c.StudentUiPbb\x06proto3'
   ,
   dependencies=[entityUiPb__pb2.DESCRIPTOR,nameUiPb__pb2.DESCRIPTOR,emailUiPb__pb2.DESCRIPTOR,addressUiPb__pb2.DESCRIPTOR,timeUiPb__pb2.DESCRIPTOR,mobileUiPb__pb2.DESCRIPTOR,summaryUiPb__pb2.DESCRIPTOR,classUiPb__pb2.DESCRIPTOR,])
 
@@ -39,6 +40,7 @@ _STUDENTUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='dbInfo', full_name='StudentUiPb.dbInfo', index=0,
@@ -46,56 +48,56 @@ _STUDENTUIPB = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='name', full_name='StudentUiPb.name', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='email', full_name='StudentUiPb.email', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='address', full_name='StudentUiPb.address', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='mobile', full_name='StudentUiPb.mobile', index=4,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='createdTime', full_name='StudentUiPb.createdTime', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='classRef', full_name='StudentUiPb.classRef', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='studentCode', full_name='StudentUiPb.studentCode', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -113,13 +115,42 @@ _STUDENTUIPB = _descriptor.Descriptor(
 )
 
 
-_STUDENTSEARCHREQUESTUIPB = _descriptor.Descriptor(
-  name='StudentSearchRequestUiPb',
-  full_name='StudentSearchRequestUiPb',
+_STUDENTUIPBREF = _descriptor.Descriptor(
+  name='StudentUiPbRef',
+  full_name='StudentUiPbRef',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='StudentUiPbRef.id', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='name', full_name='StudentUiPbRef.name', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='classRef', full_name='StudentUiPbRef.classRef', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='studentCode', full_name='StudentUiPbRef.studentCode', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -133,31 +164,18 @@ _STUDENTSEARCHREQUESTUIPB = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=404,
-  serialized_end=430,
+  serialized_end=511,
 )
 
 
-_STUDENTSEARCHRESPONSEUIPB = _descriptor.Descriptor(
-  name='StudentSearchResponseUiPb',
-  full_name='StudentSearchResponseUiPb',
+_STUDENTSEARCHREQUESTUIPB = _descriptor.Descriptor(
+  name='StudentSearchRequestUiPb',
+  full_name='StudentSearchRequestUiPb',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
-    _descriptor.FieldDescriptor(
-      name='summary', full_name='StudentSearchResponseUiPb.summary', index=0,
-      number=1, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='results', full_name='StudentSearchResponseUiPb.results', index=1,
-      number=2, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -170,8 +188,47 @@ _STUDENTSEARCHRESPONSEUIPB = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=432,
-  serialized_end=521,
+  serialized_start=513,
+  serialized_end=539,
+)
+
+
+_STUDENTSEARCHRESPONSEUIPB = _descriptor.Descriptor(
+  name='StudentSearchResponseUiPb',
+  full_name='StudentSearchResponseUiPb',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='summary', full_name='StudentSearchResponseUiPb.summary', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='results', full_name='StudentSearchResponseUiPb.results', index=1,
+      number=2, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=541,
+  serialized_end=630,
 )
 
 _STUDENTUIPB.fields_by_name['dbInfo'].message_type = entityUiPb__pb2._ENTITYUIPB
@@ -181,9 +238,12 @@ _STUDENTUIPB.fields_by_name['address'].message_type = addressUiPb__pb2._ADDRESSU
 _STUDENTUIPB.fields_by_name['mobile'].message_type = mobileUiPb__pb2._MOBILEUIPB
 _STUDENTUIPB.fields_by_name['createdTime'].message_type = timeUiPb__pb2._TIMEUIPB
 _STUDENTUIPB.fields_by_name['classRef'].message_type = classUiPb__pb2._CLASSUIPBREF
+_STUDENTUIPBREF.fields_by_name['name'].message_type = nameUiPb__pb2._NAMEUIPB
+_STUDENTUIPBREF.fields_by_name['classRef'].message_type = classUiPb__pb2._CLASSUIPBREF
 _STUDENTSEARCHRESPONSEUIPB.fields_by_name['summary'].message_type = summaryUiPb__pb2._SUMMARYUIPB
 _STUDENTSEARCHRESPONSEUIPB.fields_by_name['results'].message_type = _STUDENTUIPB
 DESCRIPTOR.message_types_by_name['StudentUiPb'] = _STUDENTUIPB
+DESCRIPTOR.message_types_by_name['StudentUiPbRef'] = _STUDENTUIPBREF
 DESCRIPTOR.message_types_by_name['StudentSearchRequestUiPb'] = _STUDENTSEARCHREQUESTUIPB
 DESCRIPTOR.message_types_by_name['StudentSearchResponseUiPb'] = _STUDENTSEARCHRESPONSEUIPB
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -194,6 +254,13 @@ StudentUiPb = _reflection.GeneratedProtocolMessageType('StudentUiPb', (_message.
   # @@protoc_insertion_point(class_scope:StudentUiPb)
   })
 _sym_db.RegisterMessage(StudentUiPb)
+
+StudentUiPbRef = _reflection.GeneratedProtocolMessageType('StudentUiPbRef', (_message.Message,), {
+  'DESCRIPTOR' : _STUDENTUIPBREF,
+  '__module__' : 'studentUiPb_pb2'
+  # @@protoc_insertion_point(class_scope:StudentUiPbRef)
+  })
+_sym_db.RegisterMessage(StudentUiPbRef)
 
 StudentSearchRequestUiPb = _reflection.GeneratedProtocolMessageType('StudentSearchRequestUiPb', (_message.Message,), {
   'DESCRIPTOR' : _STUDENTSEARCHREQUESTUIPB,

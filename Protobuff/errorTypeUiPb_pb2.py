@@ -19,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\x13\x65rrorTypeUiPb.proto\"M\n\tErrorUiPb\x12!\n\terrorType\x18\x01 \x01(\x0e\x32\x0e.ErrorTypeEnum\x12\r\n\x05\x65rror\x18\x02 \x01(\t\x12\x0e\n\x06status\x18\x03 \x01(\x05*\xa7\x01\n\rErrorTypeEnum\x12\x11\n\rUNKNOWN_ERROR\x10\x00\x12\x0f\n\x0bINPUT_ERROR\x10\x01\x12\x1a\n\x16INPUT_VALIDATION_ERROR\x10\x02\x12\x0e\n\nJSON_ERROR\x10\x03\x12\x19\n\x15JSON_VALIDATION_ERROR\x10\x04\x12\x15\n\x11UN_EXPECTED_ERROR\x10\x05\x12\x14\n\x10INVALID_RESPONSE\x10\x06\x62\x06proto3'
 )
 
@@ -27,35 +28,43 @@ _ERRORTYPEENUM = _descriptor.EnumDescriptor(
   full_name='ErrorTypeEnum',
   filename=None,
   file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
       name='UNKNOWN_ERROR', index=0, number=0,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='INPUT_ERROR', index=1, number=1,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='INPUT_VALIDATION_ERROR', index=2, number=2,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='JSON_ERROR', index=3, number=3,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='JSON_VALIDATION_ERROR', index=4, number=4,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='UN_EXPECTED_ERROR', index=5, number=5,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='INVALID_RESPONSE', index=6, number=6,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
@@ -81,6 +90,7 @@ _ERRORUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='errorType', full_name='ErrorUiPb.errorType', index=0,
@@ -88,21 +98,21 @@ _ERRORUIPB = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='error', full_name='ErrorUiPb.error', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='status', full_name='ErrorUiPb.status', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],

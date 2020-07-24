@@ -21,6 +21,7 @@ import sectionUiPb_pb2 as sectionUiPb__pb2
 import genericRefPb_pb2 as genericRefPb__pb2
 import accountDetailsPb_pb2 as accountDetailsPb__pb2
 import accountDetailsUiPb_pb2 as accountDetailsUiPb__pb2
+import booleanTypeUiPb_pb2 as booleanTypeUiPb__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -28,9 +29,10 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x0eschoolPb.proto\x1a\x0e\x65ntityPb.proto\x1a\x0cnamePb.proto\x1a\x0f\x61\x64\x64ressPb.proto\x1a\x0ctimePb.proto\x1a\x0emobilePb.proto\x1a\x13\x63lassTypeUiPb.proto\x1a\x11sectionUiPb.proto\x1a\x12genericRefPb.proto\x1a\x16\x61\x63\x63ountDetailsPb.proto\x1a\x18\x61\x63\x63ountDetailsUiPb.proto\"\xed\x02\n\x08SchoolPb\x12\x19\n\x06\x64\x62Info\x18\x01 \x01(\x0b\x32\t.EntityPb\x12\x15\n\x04name\x18\x02 \x01(\x0b\x32\x07.NamePb\x12\x1b\n\x07\x61\x64\x64ress\x18\x03 \x01(\x0b\x32\n.AddressPb\x12\x19\n\x06mobile\x18\x04 \x03(\x0b\x32\t.MobilePb\x12\x1c\n\x0b\x63reatedTime\x18\x05 \x01(\x0b\x32\x07.TimePb\x12#\n\x0corganisation\x18\x06 \x01(\x0b\x32\r.GenericRefPb\x12\x12\n\nschoolCode\x18\x07 \x01(\t\x12+\n\x0e\x61\x63\x63ountUseType\x18\x08 \x01(\x0e\x32\x13.AccountUseTypeEnum\x12)\n\x0e\x61\x63\x63ountDetails\x18\t \x01(\x0b\x32\x11.AccountDetailsPb\x12!\n\tclassType\x18\n \x03(\x0e\x32\x0e.ClassTypeEnum\x12%\n\x0bsectionType\x18\x0b \x03(\x0e\x32\x10.SectionTypeEnum\"\x9c\x01\n\x0bSchoolPbRef\x12\n\n\x02id\x18\x01 \x01(\t\x12#\n\x0corganisation\x18\x02 \x01(\x0b\x32\r.GenericRefPb\x12\x12\n\nschoolCode\x18\x03 \x01(\t\x12!\n\tclassType\x18\n \x03(\x0e\x32\x0e.ClassTypeEnum\x12%\n\x0bsectionType\x18\x0b \x03(\x0e\x32\x10.SectionTypeEnumb\x06proto3'
+  create_key=_descriptor._internal_create_key,
+  serialized_pb=b'\n\x0eschoolPb.proto\x1a\x0e\x65ntityPb.proto\x1a\x0cnamePb.proto\x1a\x0f\x61\x64\x64ressPb.proto\x1a\x0ctimePb.proto\x1a\x0emobilePb.proto\x1a\x13\x63lassTypeUiPb.proto\x1a\x11sectionUiPb.proto\x1a\x12genericRefPb.proto\x1a\x16\x61\x63\x63ountDetailsPb.proto\x1a\x18\x61\x63\x63ountDetailsUiPb.proto\x1a\x15\x62ooleanTypeUiPb.proto\"\x97\x03\n\x08SchoolPb\x12\x19\n\x06\x64\x62Info\x18\x01 \x01(\x0b\x32\t.EntityPb\x12\x15\n\x04name\x18\x02 \x01(\x0b\x32\x07.NamePb\x12\x1b\n\x07\x61\x64\x64ress\x18\x03 \x01(\x0b\x32\n.AddressPb\x12\x19\n\x06mobile\x18\x04 \x03(\x0b\x32\t.MobilePb\x12\x1c\n\x0b\x63reatedTime\x18\x05 \x01(\x0b\x32\x07.TimePb\x12#\n\x0corganisation\x18\x06 \x01(\x0b\x32\r.GenericRefPb\x12\x12\n\nschoolCode\x18\x07 \x01(\t\x12+\n\x0e\x61\x63\x63ountUseType\x18\x08 \x01(\x0e\x32\x13.AccountUseTypeEnum\x12)\n\x0e\x61\x63\x63ountDetails\x18\t \x01(\x0b\x32\x11.AccountDetailsPb\x12!\n\tclassType\x18\n \x03(\x0e\x32\x0e.ClassTypeEnum\x12%\n\x0bsectionType\x18\x0b \x03(\x0e\x32\x10.SectionTypeEnum\x12(\n\x0e\x61\x63\x63ountSection\x18\x0c \x01(\x0e\x32\x10.BooleanTypeEnum\"\x9c\x01\n\x0bSchoolPbRef\x12\n\n\x02id\x18\x01 \x01(\t\x12#\n\x0corganisation\x18\x02 \x01(\x0b\x32\r.GenericRefPb\x12\x12\n\nschoolCode\x18\x03 \x01(\t\x12!\n\tclassType\x18\n \x03(\x0e\x32\x0e.ClassTypeEnum\x12%\n\x0bsectionType\x18\x0b \x03(\x0e\x32\x10.SectionTypeEnumb\x06proto3'
   ,
-  dependencies=[entityPb__pb2.DESCRIPTOR,namePb__pb2.DESCRIPTOR,addressPb__pb2.DESCRIPTOR,timePb__pb2.DESCRIPTOR,mobilePb__pb2.DESCRIPTOR,classTypeUiPb__pb2.DESCRIPTOR,sectionUiPb__pb2.DESCRIPTOR,genericRefPb__pb2.DESCRIPTOR,accountDetailsPb__pb2.DESCRIPTOR,accountDetailsUiPb__pb2.DESCRIPTOR,])
+  dependencies=[entityPb__pb2.DESCRIPTOR,namePb__pb2.DESCRIPTOR,addressPb__pb2.DESCRIPTOR,timePb__pb2.DESCRIPTOR,mobilePb__pb2.DESCRIPTOR,classTypeUiPb__pb2.DESCRIPTOR,sectionUiPb__pb2.DESCRIPTOR,genericRefPb__pb2.DESCRIPTOR,accountDetailsPb__pb2.DESCRIPTOR,accountDetailsUiPb__pb2.DESCRIPTOR,booleanTypeUiPb__pb2.DESCRIPTOR,])
 
 
 
@@ -41,6 +43,7 @@ _SCHOOLPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='dbInfo', full_name='SchoolPb.dbInfo', index=0,
@@ -48,77 +51,84 @@ _SCHOOLPB = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='name', full_name='SchoolPb.name', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='address', full_name='SchoolPb.address', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='mobile', full_name='SchoolPb.mobile', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='createdTime', full_name='SchoolPb.createdTime', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='organisation', full_name='SchoolPb.organisation', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='schoolCode', full_name='SchoolPb.schoolCode', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='accountUseType', full_name='SchoolPb.accountUseType', index=7,
       number=8, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='accountDetails', full_name='SchoolPb.accountDetails', index=8,
       number=9, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='classType', full_name='SchoolPb.classType', index=9,
       number=10, type=14, cpp_type=8, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='sectionType', full_name='SchoolPb.sectionType', index=10,
       number=11, type=14, cpp_type=8, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='accountSection', full_name='SchoolPb.accountSection', index=11,
+      number=12, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -131,8 +141,8 @@ _SCHOOLPB = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=206,
-  serialized_end=571,
+  serialized_start=229,
+  serialized_end=636,
 )
 
 
@@ -142,6 +152,7 @@ _SCHOOLPBREF = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='id', full_name='SchoolPbRef.id', index=0,
@@ -149,35 +160,35 @@ _SCHOOLPBREF = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='organisation', full_name='SchoolPbRef.organisation', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='schoolCode', full_name='SchoolPbRef.schoolCode', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='classType', full_name='SchoolPbRef.classType', index=3,
       number=10, type=14, cpp_type=8, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='sectionType', full_name='SchoolPbRef.sectionType', index=4,
       number=11, type=14, cpp_type=8, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -190,8 +201,8 @@ _SCHOOLPBREF = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=574,
-  serialized_end=730,
+  serialized_start=639,
+  serialized_end=795,
 )
 
 _SCHOOLPB.fields_by_name['dbInfo'].message_type = entityPb__pb2._ENTITYPB
@@ -204,6 +215,7 @@ _SCHOOLPB.fields_by_name['accountUseType'].enum_type = accountDetailsUiPb__pb2._
 _SCHOOLPB.fields_by_name['accountDetails'].message_type = accountDetailsPb__pb2._ACCOUNTDETAILSPB
 _SCHOOLPB.fields_by_name['classType'].enum_type = classTypeUiPb__pb2._CLASSTYPEENUM
 _SCHOOLPB.fields_by_name['sectionType'].enum_type = sectionUiPb__pb2._SECTIONTYPEENUM
+_SCHOOLPB.fields_by_name['accountSection'].enum_type = booleanTypeUiPb__pb2._BOOLEANTYPEENUM
 _SCHOOLPBREF.fields_by_name['organisation'].message_type = genericRefPb__pb2._GENERICREFPB
 _SCHOOLPBREF.fields_by_name['classType'].enum_type = classTypeUiPb__pb2._CLASSTYPEENUM
 _SCHOOLPBREF.fields_by_name['sectionType'].enum_type = sectionUiPb__pb2._SECTIONTYPEENUM

@@ -20,10 +20,11 @@ message StudentUiPb {
     string studentCode = 8;
 }
 
-message StudentRefUiPb{
+message StudentUiPbRef{
     string id = 1;
-    ClassUiPbRef classRef = 2;
-    string studentCode = 3;
+    NameUiPb name = 2;
+    ClassUiPbRef classRef =3;
+    string studentCode = 4;
 }
 
 

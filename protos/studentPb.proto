@@ -19,9 +19,9 @@ message StudentPb {
     string studentCode = 8;
 }
 
-message StudentRefPb{
+message StudentPbRef{
     string id = 1;
-    ClassPbRef classRef = 2;
-    string studentCode = 3;
+    NamePb name = 2;
+    ClassPbRef classRef =3;
+    string studentCode = 4;
 }
-
