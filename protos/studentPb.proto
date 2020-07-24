@@ -18,3 +18,10 @@ message StudentPb {
     ClassPbRef classRef = 7;
     string studentCode = 8;
 }
+
+message StudentPbRef{
+    string id = 1;
+    NamePb name = 2;
+    ClassPbRef classRef =3;
+    string studentCode = 4;
+}

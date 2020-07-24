@@ -19,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\x18\x61\x63\x63ountDetailsUiPb.proto\"\x95\x01\n\x12\x41\x63\x63ountDetailsUiPb\x12\x11\n\taccountNo\x18\x01 \x01(\t\x12\x10\n\x08ifscCode\x18\x02 \x01(\t\x12\x15\n\rrecipientName\x18\x03 \x01(\t\x12\x10\n\x08\x62\x61nkName\x18\x04 \x01(\t\x12\x0e\n\x06\x62ranch\x18\x05 \x01(\t\x12!\n\tgooglePay\x18\x06 \x01(\x0b\x32\x0e.GooglePayUiPb\"\x1e\n\rGooglePayUiPb\x12\r\n\x05upiId\x18\x01 \x01(\t*M\n\x12\x41\x63\x63ountUseTypeEnum\x12\x18\n\x14UNKNOWN_ACCOUNT_TYPE\x10\x00\x12\x0e\n\nSINGLE_USE\x10\x01\x12\r\n\tMULTI_USE\x10\x02\x62\x06proto3'
 )
 
@@ -27,19 +28,23 @@ _ACCOUNTUSETYPEENUM = _descriptor.EnumDescriptor(
   full_name='AccountUseTypeEnum',
   filename=None,
   file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
       name='UNKNOWN_ACCOUNT_TYPE', index=0, number=0,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='SINGLE_USE', index=1, number=1,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='MULTI_USE', index=2, number=2,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
@@ -61,6 +66,7 @@ _ACCOUNTDETAILSUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='accountNo', full_name='AccountDetailsUiPb.accountNo', index=0,
@@ -68,42 +74,42 @@ _ACCOUNTDETAILSUIPB = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='ifscCode', full_name='AccountDetailsUiPb.ifscCode', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='recipientName', full_name='AccountDetailsUiPb.recipientName', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='bankName', full_name='AccountDetailsUiPb.bankName', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='branch', full_name='AccountDetailsUiPb.branch', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='googlePay', full_name='AccountDetailsUiPb.googlePay', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -127,6 +133,7 @@ _GOOGLEPAYUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='upiId', full_name='GooglePayUiPb.upiId', index=0,
@@ -134,7 +141,7 @@ _GOOGLEPAYUIPB = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],

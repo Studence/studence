@@ -23,6 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\x0floginUiPb.proto\x1a\x10\x65ntityUiPb.proto\x1a\x0f\x65mailUiPb.proto\x1a\x14genericRefUiPb.proto\x1a\x12userTypeUiPb.proto\x1a\x0etimeUiPb.proto\"\xb8\x01\n\tLoginUiPb\x12\x1b\n\x06\x64\x62Info\x18\x01 \x01(\x0b\x32\x0b.EntityUiPb\x12\x19\n\x05\x65mail\x18\x02 \x01(\x0b\x32\n.EmailUiPb\x12\x10\n\x08password\x18\x03 \x01(\t\x12 \n\x07userRef\x18\x04 \x01(\x0b\x32\x0f.GenericRefUiPb\x12\x1f\n\x08userType\x18\x05 \x01(\x0e\x32\r.UserTypeEnum\x12\x1e\n\x0b\x63reatedTime\x18\x06 \x01(\x0b\x32\t.TimeUiPbb\x06proto3'
   ,
   dependencies=[entityUiPb__pb2.DESCRIPTOR,emailUiPb__pb2.DESCRIPTOR,genericRefUiPb__pb2.DESCRIPTOR,userTypeUiPb__pb2.DESCRIPTOR,timeUiPb__pb2.DESCRIPTOR,])
@@ -36,6 +37,7 @@ _LOGINUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='dbInfo', full_name='LoginUiPb.dbInfo', index=0,
@@ -43,42 +45,42 @@ _LOGINUIPB = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='email', full_name='LoginUiPb.email', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='password', full_name='LoginUiPb.password', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='userRef', full_name='LoginUiPb.userRef', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='userType', full_name='LoginUiPb.userType', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='createdTime', full_name='LoginUiPb.createdTime', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],

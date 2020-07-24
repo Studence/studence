@@ -19,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\x0etimeUiPb.proto\"\x83\x01\n\x08TimeUiPb\x12\x0c\n\x04\x64\x61te\x18\x01 \x01(\t\x12\r\n\x05month\x18\x02 \x01(\t\x12\x0c\n\x04year\x18\x03 \x01(\t\x12\x14\n\x0cmilliseconds\x18\x04 \x01(\x03\x12\x15\n\rformattedDate\x18\x05 \x01(\t\x12\x1f\n\x08timezone\x18\x06 \x01(\x0e\x32\r.TimeZoneEnum*7\n\x0cTimeZoneEnum\x12\x15\n\x11UNKNOWN_TIME_ZONE\x10\x00\x12\x07\n\x03IST\x10\x01\x12\x07\n\x03UTC\x10\x02\x62\x06proto3'
 )
 
@@ -27,19 +28,23 @@ _TIMEZONEENUM = _descriptor.EnumDescriptor(
   full_name='TimeZoneEnum',
   filename=None,
   file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
       name='UNKNOWN_TIME_ZONE', index=0, number=0,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='IST', index=1, number=1,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='UTC', index=2, number=2,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
@@ -61,6 +66,7 @@ _TIMEUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='date', full_name='TimeUiPb.date', index=0,
@@ -68,42 +74,42 @@ _TIMEUIPB = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='month', full_name='TimeUiPb.month', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='year', full_name='TimeUiPb.year', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='milliseconds', full_name='TimeUiPb.milliseconds', index=3,
       number=4, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='formattedDate', full_name='TimeUiPb.formattedDate', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='timezone', full_name='TimeUiPb.timezone', index=5,
       number=6, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],

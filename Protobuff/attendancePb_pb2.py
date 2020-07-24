@@ -23,6 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\x12\x61ttendancePb.proto\x1a\x0e\x65ntityPb.proto\x1a\x0cnamePb.proto\x1a\x0ctimePb.proto\x1a\rclassPb.proto\x1a\x14\x61ttendanceUiPb.proto\"\xc8\x01\n\x0c\x41ttendancePb\x12\x19\n\x06\x64\x62Info\x18\x01 \x01(\x0b\x32\t.EntityPb\x12\x12\n\nattendeeId\x18\x02 \x01(\t\x12\x1d\n\x0c\x61ttendeeName\x18\x03 \x01(\x0b\x32\x07.NamePb\x12\x1c\n\x0b\x63reatedTime\x18\x04 \x01(\x0b\x32\x07.TimePb\x12-\n\x10\x61ttendanceStatus\x18\x05 \x01(\x0e\x32\x13.AttendanceTypeEnum\x12\x1d\n\x08\x63lassRef\x18\x06 \x01(\x0b\x32\x0b.ClassPbRefb\x06proto3'
   ,
   dependencies=[entityPb__pb2.DESCRIPTOR,namePb__pb2.DESCRIPTOR,timePb__pb2.DESCRIPTOR,classPb__pb2.DESCRIPTOR,attendanceUiPb__pb2.DESCRIPTOR,])
@@ -36,6 +37,7 @@ _ATTENDANCEPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='dbInfo', full_name='AttendancePb.dbInfo', index=0,
@@ -43,42 +45,42 @@ _ATTENDANCEPB = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='attendeeId', full_name='AttendancePb.attendeeId', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='attendeeName', full_name='AttendancePb.attendeeName', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='createdTime', full_name='AttendancePb.createdTime', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='attendanceStatus', full_name='AttendancePb.attendanceStatus', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='classRef', full_name='AttendancePb.classRef', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],

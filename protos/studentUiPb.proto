@@ -20,6 +20,13 @@ message StudentUiPb {
     string studentCode = 8;
 }
 
+message StudentUiPbRef{
+    string id = 1;
+    NameUiPb name = 2;
+    ClassUiPbRef classRef =3;
+    string studentCode = 4;
+}
+
 
 message StudentSearchRequestUiPb {
 

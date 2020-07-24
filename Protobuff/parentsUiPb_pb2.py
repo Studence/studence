@@ -22,6 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\x11parentsUiPb.proto\x1a\x0enameUiPb.proto\x1a\x10mobileUiPb.proto\x1a\x0f\x65mailUiPb.proto\"\x99\x01\n\x0bParentsUiPb\x12\x17\n\x04name\x18\x01 \x01(\x0b\x32\t.NameUiPb\x12\x1b\n\x06mobile\x18\x02 \x03(\x0b\x32\x0b.MobileUiPb\x12\x19\n\x05\x65mail\x18\x03 \x01(\x0b\x32\n.EmailUiPb\x12\x13\n\x0bparentsCode\x18\x04 \x01(\t\x12$\n\nparentType\x18\x05 \x01(\x0e\x32\x10.ParentsTypeEnum\"\x1a\n\x18ParentsSearchRequestUiPb*\x83\x01\n\x0fParentsTypeEnum\x12\x13\n\x0fUNKNOWN_PARENTS\x10\x00\x12\x11\n\rPARENT_FATHER\x10\x01\x12\x11\n\rPARENT_MOTHER\x10\x02\x12\x10\n\x0cPARENT_UNCLE\x10\x03\x12\x10\n\x0cPARENT_AUNTY\x10\x04\x12\x11\n\rPARENT_OTHERS\x10\x05\x62\x06proto3'
   ,
   dependencies=[nameUiPb__pb2.DESCRIPTOR,mobileUiPb__pb2.DESCRIPTOR,emailUiPb__pb2.DESCRIPTOR,])
@@ -31,31 +32,38 @@ _PARENTSTYPEENUM = _descriptor.EnumDescriptor(
   full_name='ParentsTypeEnum',
   filename=None,
   file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
       name='UNKNOWN_PARENTS', index=0, number=0,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='PARENT_FATHER', index=1, number=1,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='PARENT_MOTHER', index=2, number=2,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='PARENT_UNCLE', index=3, number=3,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='PARENT_AUNTY', index=4, number=4,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='PARENT_OTHERS', index=5, number=5,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
@@ -80,6 +88,7 @@ _PARENTSUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='name', full_name='ParentsUiPb.name', index=0,
@@ -87,35 +96,35 @@ _PARENTSUIPB = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='mobile', full_name='ParentsUiPb.mobile', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='email', full_name='ParentsUiPb.email', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='parentsCode', full_name='ParentsUiPb.parentsCode', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='parentType', full_name='ParentsUiPb.parentType', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -139,6 +148,7 @@ _PARENTSSEARCHREQUESTUIPB = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
   ],
   extensions=[
