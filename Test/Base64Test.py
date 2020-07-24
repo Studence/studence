@@ -1,7 +1,13 @@
+import re
+
+from CommonCode.passwordHashOrDehashHelper import PasswordHasherOrDeHasher
 from CryptoModule.EncryptorAndDecryptor import EncryptorAndDecryptor
 
-chiper = EncryptorAndDecryptor()
+'''chiper = EncryptorAndDecryptor()
 
 resp = chiper.decode(
     chiperText='gAAAAABepDfFZgee6O6kUEJC0wWqw4APfw4imhkn7ITzknJN7dNSG8txdS0Cso_elBsrhL9wEqpu6Gu5dqYHzXWSx0nua_OZGOAMzRmqBDwBYnqRzRF-B9jHGxj-fA4IFG9nSjeZvWRBIIboxlNrwTvM5aOSfRZJjk2ZpCA9pMB_XqJIgkg9GUljhUc2mArJFBbWrYnDaNzpmi8CPSkn4I6-uJKZ_-vNpG-o6iMaDjxyoa6QuF5G2Ri9gPCWgBYF_laiCVBy0ux7NDP3tM5oxvhRsvRrqCjKFicEW96tRyxiX8AL1n6g8PXMBvTaBakatW3qT256rWppTOXWTO1OY43B1kfIrWaqWpOqBXJSxRVOvUnj9U2pqVzaN_ljoXP91axMyZ_EBY7gujmtpGzHXss8w_hUOb12Zv-JNo2Hn_mLe2m_f_hc3vs7VQwOg9Qpg5KKLLd9_psV')
-print(resp)
+print(resp)'''
+hasher= PasswordHasherOrDeHasher();
+print(hasher.getIsValidMd5(data="e82333d8885b5f3635478d9c7691ddb"))
+

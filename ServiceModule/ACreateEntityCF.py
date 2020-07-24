@@ -2,6 +2,7 @@ from enum import Enum
 
 from google.protobuf.json_format import MessageToJson
 
+from AWSModules.DynanoDbDatabaseModule.DynamodbKeyTypeEnum import DynamoDbKeyTypeEnum
 from BaseCodeModule.CreateEntity import CreateEntity
 from CommonCode.strings import Strings
 from EntityModule.EntityService import EntityService
@@ -21,12 +22,14 @@ class ACreateEntityCF:
     m_id = None;
     m_response = None;
     m_json = None;
+    m_tableName = None;
     m_updator = None
 
     m_entityService = EntityService()
 
     def __init__(self, updator, convertor, tableName, pb, updateListner):
         self.m_updator = updator;
+        self.m_tableName = tableName;
         self.m_create = CreateEntity(convertor, tableName, pb, updateListner)
 
     def start(self, uipb):
@@ -63,6 +66,10 @@ class ACreateEntityCF:
             raise Exception('Error while Converting to Pb' + MessageToJson(self.m_uiPb))
 
     def createInDb(self):
+        if(self.m_tableName.tableKeySchemaType() == DynamoDbKeyTypeEnum.RANGE_KEY):
+            if("@" not in self.m_json.dbInfo.id):
+                raise Exception('Error in Rannge Key' + MessageToJson(self.m_json))
+
         resp = self.m_create.create(pb=self.m_json)
         if (resp == None):
             # self.controlFlow(currentState=State.DONE)

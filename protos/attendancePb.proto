@@ -5,13 +5,13 @@ import "namePb.proto";
 import "timePb.proto";
 import "classPb.proto";
 import "attendanceUiPb.proto";
+import "studentPb.proto";
 
 
 message AttendancePb {
     EntityPb dbInfo = 1;
-    string attendeeId = 2;
-    NamePb attendeeName = 3;
-    TimePb createdTime = 4;
-    AttendanceTypeEnum attendanceStatus = 5;
-    ClassPbRef classRef = 6;
+    NamePb attendeeName = 2;
+    TimePb createdTime = 3;
+    AttendanceTypeEnum attendanceStatus = 4;
+    StudentRefPb studentRef = 5;
 }

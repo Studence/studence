@@ -4,6 +4,7 @@ import "entityUiPb.proto";
 import "nameUiPb.proto";
 import "timeUiPb.proto";
 import "classUiPb.proto";
+import "studentUiPb.proto";
 
 
 enum AttendanceTypeEnum {
@@ -13,9 +14,8 @@ enum AttendanceTypeEnum {
 
 message AttendanceUiPb {
     EntityUiPb dbInfo = 1;
-    string attendeeId = 2;
-    NameUiPb attendeeName = 3;
-    TimeUiPb createdTime = 4;
-    AttendanceTypeEnum attendanceStatus = 5;
-    ClassUiPbRef classRef = 6;
+    NameUiPb attendeeName = 2;
+    TimeUiPb createdTime = 3;
+    AttendanceTypeEnum attendanceStatus = 4;
+    StudentRefUiPb studentRef = 5;
 }

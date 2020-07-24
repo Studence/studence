@@ -8,20 +8,13 @@ import "timePb.proto";
 import "mobilePb.proto";
 import "classPb.proto";
 
-message StudentPb {
+message TeacherPb {
     EntityPb dbInfo = 1;
     NamePb name = 2;
     EmailPb email = 3;
     AddressPb address = 4;
     repeated MobilePb mobile = 5;
     TimePb createdTime = 6;
-    ClassPbRef classRef = 7;
-    string studentCode = 8;
+    SchoolPbRef schoolPbRef = 7;
+    string teacherCode = 8;
 }
-
-message StudentRefPb{
-    string id = 1;
-    ClassPbRef classRef = 2;
-    string studentCode = 3;
-}
-

@@ -1,4 +1,5 @@
 import hashlib
+import re
 
 import bcrypt
 
@@ -18,3 +19,9 @@ class PasswordHasherOrDeHasher:
 
     def getMd5PasswordMatch(self, actualPassword, hashedPassword):
         return self.getMd5hashFromPassWord(password=actualPassword) == hashedPassword
+
+    def getIsValidMd5(self, data):
+        if (len(re.findall(r"([a-fA-F\d]{32})", data)) != 0):
+            return True
+        else:
+            return False

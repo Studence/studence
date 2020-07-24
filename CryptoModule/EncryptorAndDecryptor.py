@@ -1,5 +1,5 @@
 from cryptography.fernet import Fernet
-
+#do not edit this key
 KEY = "ehKMdrFs2lSkLLiYxaRbABogh6XW4HUfeV0ogsrFaYM="
 
 
