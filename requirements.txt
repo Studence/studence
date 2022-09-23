@@ -32,7 +32,7 @@ Naked==0.1.31
 numpy==1.18.2
 pandas==1.0.3
 pastel==0.1.1
-protobuf==3.11.3
+protobuf==3.18.3
 psycopg2==2.8.5
 pycparser==2.20
 pycryptodome==3.9.7
